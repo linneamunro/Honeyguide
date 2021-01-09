@@ -1,17 +1,17 @@
 var slideIndex = 1;
 showSlides(slideIndex);
-var value = 0;
+var check = 0;
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);  
   document.getElementById("n").style.display = "none";
   document.getElementById("c").style.display = "block";
+  check = 0;
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  value = 0;
   showSlides(slideIndex = n);
 }
 
@@ -81,5 +81,33 @@ function clickG(){
     document.getElementById("firstSuccess").style.display = "block";
     document.getElementById("firstAvatar").onclick = function(){ toggle("firstSuccess") };
     document.getElementById("n").style.display = "block";
+  }
+}
+
+function success(){
+  var success = new Audio("/sounds/success.wav");
+  success.play();
+}
+
+function failure(){
+  var failure = new Audio("/sounds/failure.wav");
+  failure.play();
+}
+
+function checkWord(e, id){
+  if(e.keyCode == 13){
+    document.getElementById(id).style.display = "none";
+    showNext();
+  }
+}
+
+function count(){
+  check += 1;
+}
+
+function checkCount(num, id){
+  if(check == num){
+    document.getElementById(id).style.display = "none";
+    showNext();
   }
 }
