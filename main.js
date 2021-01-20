@@ -111,3 +111,7 @@ function checkCount(num, id){
     showNext();
   }
 }
+
+function highlight(id){
+  document.getElementById(id).style.backgroundColor = "lightgray";
+}
