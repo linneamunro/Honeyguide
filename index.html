@@ -75,16 +75,18 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s1.jpg">
         <img class="avatar"  src="/images/Avatar.png">
+        <div id="hideThird" class="toggleButton" style="display: none;" onclick="hide('chitik'); hide('hideThird'); show('showThird')">Hide Question</div>
+        <div id="showThird" class="toggleButton" style="display: none;" onclick="show('chitik'); show('hideThird'); hide('showThird')">Show Question</div>
         <div id="chitik" class="multiple arrow2" style="margin-left: 14vw; margin-top: 1vw; height: 20vw; display: none;">
           Why does Gingele's mouth water when he hear's the little bird's call "chitik-chitik-chitik"?<br>
-          <br><span class="choice" onclick="success(); showNext(); hide('chitik')">(a) He knew the bird would lead him to honey</span>
+          <br><span class="choice" onclick="success(); showNext(); hide('chitik'); hide('hideThird')">(a) He knew the bird would lead him to honey</span>
           <br><span class="choice" onclick="failure();">(b) When he saw the bird in the branches, he also saw the bee hive</span>
           <br><span class="choice" onclick="failure()">(c) He was not successful in his hunting and was getting hungry</span>
         </div>
         <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, 
           searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird rattled, as he flew to the next tree, and the next. 
           <span id="chitik_word">“Chitik, chitik, chitik,”</span> he called, stopping from time to time to be sure that Gingile followed.
-          <span id="secondCheck1" class="success-checkmark2" onclick="highlight('chitik_word'); show('chitik'); hide('secondCheck1')"></span>
+          <span id="secondCheck1" class="success-checkmark2" onclick="highlight('chitik_word'); show('chitik'); show('hideThird'); hide('secondCheck1')"></span>
         </div>
       </div>
     </div>
@@ -95,7 +97,7 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s2.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="trusted" class="dictionary" style="margin-top: -2vw;">
+        <div id="trusted" class="dictionary" style="margin-top: -2vw; width: 30vw;">
           <b style="background-color: lightgray;">Trusted (verb).</b> <br>Feels sure that the other character will give truthful or accurate information.
           <span class="success-checkmark" onclick="showNext(); hide('trusted')"></span>
           <div class="bubble3"></div>
@@ -133,7 +135,7 @@
         <img class="pic" src="/images/s4.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <div id="hive" class="multiple arrow" style="display: none; width: 45vw; margin-left: 15vw; margin-top: 11vw;">
-          Where did Gingile find the bees? <br> <span style="font-size: 1vw; background-color: whitesmoke;">(Click the right picture)</span> <br><br>
+          Where did Gingile find the bees? <br> <span style="font-size: 1vw; background-color: whitesmoke;">(Click the correct picture)</span> <br><br>
           <img class="multImg" onclick="failure()" src="images/q1.PNG">
           <img class="multImg" onclick="failure()" src="images/q2.PNG">
           <img class="multImg" onclick="failure()" src="images/q3.PNG">
@@ -154,7 +156,7 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s5.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="grubs" class="dictionary" style="margin-top: -4vw; width: 35vw;">
+        <div id="grubs" class="dictionary" style="margin-top: -6vw; width: 42vw;">
           <b style="background-color: lightgray;"> Grub (noun).</b> <br>Soft, worm-like larva of an insect. The larva is the first form that hatches from the egg. It undergoes several transformations before becoming the adult form of the insect.
           <span class="success-checkmark" onclick="showNext(); hide('grubs')"></span>
           <div class="bubble3"></div>
@@ -174,7 +176,7 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s6.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="perched" class="dictionary" style="width: 30vw;">
+        <div id="perched" class="dictionary" style="width: 35vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Perch (present tense) or Perched (verb, past tense).</b> <br>To rest on the edge of something or high up.
           <span class="success-checkmark" onclick=" showNext(); hide('perched')"></span>
           <div class="bubble3"></div>
@@ -194,7 +196,7 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s7.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="eight" style="display: none;" class="speech sb1">
+        <div id="eight" style="display: none; width: 20vw;" class="speech sb1">
           Do you remember how Ngede gets his revenge?
           <span class="success-checkmark" onclick="showNext(); hide('eight')"></span>
         </div>
@@ -212,17 +214,19 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s8.jpg">
         <img class="avatar" src="/images/Avatar.png">
+        <div id="hideTenth" class="toggleButton" style="display: none;" onclick="hide('delicious'); hide('hideTenth'); show('showTenth')">Hide Question</div>
+        <div id="showTenth" class="toggleButton" style="display: none;" onclick="show('delicious'); show('hideTenth'); hide('showTenth')">Show Question</div>
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
           background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer">
           honey.
-          <span class="success-checkmark2" onclick="showNext(); hide('delicious')"></span>
+          <span class="success-checkmark2" onclick="showNext(); hide('delicious'); hide('hideTenth')"></span>
         </div>
         <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the <span id="delicious_word">delicious</span> honey, and eagerly followed the bird once again. 
           After leading Gingile along the edge of the forest, Ngede stopped to rest in a great umbrella thorn. “Ahh,” thought Gingile. “The hive must be in this tree.”
           He quickly made his small fire and began to climb, the smoking branch in his teeth. Ngede sat and watched.
-          <span id="ninthCheck1" class="success-checkmark2" onclick="highlight('delicious_word'); show('delicious'); hide('ninthCheck1')"></span>
+          <span id="ninthCheck1" class="success-checkmark2" onclick="highlight('delicious_word'); show('delicious'); show('hideTenth'); hide('ninthCheck1')"></span>
         </div>
       </div>
     </div>
@@ -233,6 +237,8 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s9.jpg">
         <img class="avatar" src="/images/Avatar.png">
+        <div id="hideEleventh" class="toggleButton" style="display: none;" onclick="hide('sharp'); hide('hideEleventh'); show('showEleventh')">Hide Question</div>
+        <div id="showEleventh" class="toggleButton" style="display: none;" onclick="show('sharp'); show('hideEleventh'); hide('showEleventh')">Show Question</div>
         <div id="sharp" class="multiple arrow2" style="margin-left: 7vw; height: 15vw; margin-top: 11vw; display: none;">
           Look at the picture. The leopard looks very surprised and angry.  The leopard revealed sharp
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
@@ -241,12 +247,12 @@
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
           background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer">
           .
-          <span class="success-checkmark2" onclick="showNext(); hide('sharp')"></span>
+          <span class="success-checkmark2" onclick="showNext(); hide('sharp'); hide('hideEleventh')"></span>
         </div>
         <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another branch.
           But instead of the hive, he was staring into the face of a leopard! Leopard was very angry at having her sleep so rudely interrupted. She narrowed her eyes, opened her 
           mouth to reveal her very large and very <span id="sharp_word">sharp</span> teeth.
-          <span id="tenthCheck1" class="success-checkmark2" onclick="highlight('sharp_word'); show('sharp'); hide('tenthCheck1')"></span>
+          <span id="tenthCheck1" class="success-checkmark2" onclick="highlight('sharp_word'); show('sharp'); show('hideEleventh'); hide('tenthCheck1')"></span>
         </div>
       </div>
     </div>
@@ -277,7 +283,7 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s11.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="harvest" class="dictionary" style="width: 30vw;">
+        <div id="harvest" class="dictionary" style="width: 30vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Harvest (verb).</b> <br>To gather a crop or natural product for use, usually for eating.
           <span class="success-checkmark" onclick="showNext(); hide('harvest')"></span>
           <div class="bubble3"></div>
@@ -290,6 +296,7 @@
         </div>
       </div>
     </div>
+    
 
 
   
