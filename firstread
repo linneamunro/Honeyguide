@@ -13,7 +13,7 @@
     <!-- Intro slide -->
     <div class="mySlides fade" style="display: block;">
       <div class="slide">
-        <div class="title">The Honeyguide's Revenge</div>
+        <div class="title">The Honeyguide's Revenge First Read</div>
         <img class="pic" src="/images/Cover.jpg">
         <img class="avatar"  src="/images/Avatar.png">
         <i id="click1" class="fa fa-arrow-right" style="display: none;"></i>
