@@ -226,7 +226,7 @@
 }
 
 .words{
-  float: left;
+  float: right;
   font-size: 2vw;
   word-wrap: break-word;
   text-overflow: clip;
