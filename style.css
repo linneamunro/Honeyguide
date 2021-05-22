@@ -226,14 +226,14 @@
 }
 
 .words{
-  float: right;
+  float: left;
   font-size: 2vw;
   word-wrap: break-word;
   text-overflow: clip;
   display: block;
   margin-top: 6vw;
   width: 40vw;
-  margin-left: -4%;
+  
 }
 
 .mySlides {
