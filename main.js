@@ -5,7 +5,7 @@ var check = 0;
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);  
-  //document.getElementById("n").style.display = "none";
+  document.getElementById("n").style.display = "block";
   document.getElementById("c").style.display = "block";
   check = 0;
 }
