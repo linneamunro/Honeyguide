@@ -32,8 +32,12 @@ function show(id){
 function hide(id){
   document.getElementById(id).style.display = "none";
 }
+function shownext(){
+  document.getElementbyId("n").style.display="block";
+}
 
-function showNext(){
+function begin(){
+  document.getElementById("t").style.display = "block";
   document.getElementById("n").style.display = "block";
 }
 
