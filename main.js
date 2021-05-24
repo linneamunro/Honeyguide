@@ -37,7 +37,7 @@ function shownext(){
 }
 
 function begin(){
-  document.getElementById("t").style.display = "block";
+  document.getElementById("intro").style.display = "block";
   document.getElementById("n").style.display = "block";
 }
 
