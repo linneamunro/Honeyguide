@@ -15,6 +15,9 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>  
         <img class="pic" src="/images/Cover.jpg">
+        <audio id="2.A">
+          <source src="/sounds/2.A.mp3">
+        </audio>
         <img class="avatar"  src="/images/Avatar.png">
         <i id="click1" class="fa fa-arrow-right" style="display: none;"></i>
         <div style="width: 37%;margin-left: 50%; margin-top: 5vw; height: 20vw; position: absolute; float: right; vertical-align: middle; text-align: center;">
@@ -30,7 +33,19 @@
           How does the smoking stick work? When there is smoke the bees cannot detect alarm signals that would normally cause them to attack an intruder. 
           Smoke also makes them think there is a forest fire so they eat a lot of honey before leaving their hive to look for a new home. 
           It is hard for them to sting when they are full of honey. "
-          <span class="success-checkmark" onclick="showNext(); hide('intro'); show('click1');"></span>
+          <span class="success-checkmark" onclick="showNext(); hide('intro'); show('Ngede');"></span>
+        </div>
+        <div id="Ngede" class="dictionary">
+          N [ŋ] ge [ɡe] de [de] <br>Ngede [ŋɡede]
+          <span class="success-checkmark" onclick="show('Gingile'); hide('Ngede')"></span>
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
+        </div>
+        <div id="Gingile" class="dictionary">
+          Gin [ɡɪŋ] gi [ɡe] le [le]<br> Gingile[ɡɪŋɡele]
+          <span class="success-checkmark" onclick="hide('Gingile'); showNext(); show('click2')"></span>
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
         </div>
       </div>
     </div>
