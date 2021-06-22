@@ -37,6 +37,11 @@ function showNext(){
   document.getElementById("n").style.display = "block";
 }
 
+function begin(){
+  document.getElementById("intro").style.display = "block";
+  document.getElementById("n").style.display = "block";
+  hide("name");
+}
 
 function showSlides(n) {
   var i;
