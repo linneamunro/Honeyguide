@@ -10,6 +10,13 @@ function plusSlides(n) {
   check = 0;
 }
 
+// Next/previous for not metacognitive
+function plusSlides2(n) {
+  showSlides(slideIndex += n);  
+  document.getElementById("c").style.display = "block";
+  check = 0;
+}
+
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
