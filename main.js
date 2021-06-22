@@ -12,7 +12,8 @@ function plusSlides(n) {
 
 // Next/previous for not metacognitive
 function plusSlides2(n) {
-  showSlides(slideIndex += n);  
+  showSlides(slideIndex += n);
+  document.getElementById("n").style.display = "block";
   document.getElementById("c").style.display = "block";
   check = 0;
 }
