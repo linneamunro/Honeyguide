@@ -34,6 +34,7 @@ function hide(id){
 }
 function shownext(){
   document.getElementbyId("n").style.display="block";
+  hide("name");
 }
 
 function begin(){
