@@ -143,5 +143,5 @@ function checkCount(num, id){
 }
 
 function highlight(id){
-  document.getElementById(id).style.backgroundColor = "lightgray";
+  document.getElementById(id).style.backgroundColor = "yellow";
 }
