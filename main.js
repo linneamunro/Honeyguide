@@ -37,6 +37,12 @@ function show(id){
   document.getElementById(id).style.display = "block";
 }
 
+function showintro(){
+  document.getElementById('intro').style.display = "block";
+  document.getElementById('name').style.display = "none";
+  
+}
+
 function hide(id){
   document.getElementById(id).style.display = "none";
 }
