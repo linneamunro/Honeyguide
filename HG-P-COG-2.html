@@ -26,7 +26,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro();">Press to Begin</button>
+           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro();">Press to Begin</button>
         </div>
         <div id="intro" style="width: 35vw; display: none; text-align:left;" class="speech sb1">
           "In this story "The Honeyguide's Revenge," Gingele gets honeycomb out of a hive. He uses a smoking stick to calm the bees first. 
@@ -35,7 +35,6 @@
           It is hard for them to sting when they are full of honey. "
           <span class="success-checkmark" onclick="hide('intro'); show('Ngede');"></span>
         </div>
-     </div>
         <div id="Ngede" class="speech sb1">
           N [ŋ] ge [ɡe] de [de] <br>Ngede [ŋɡede]
           <span class="success-checkmark" onclick="show('Gingile'); hide('Ngede')"></span>
@@ -43,6 +42,7 @@
         <div id="Gingile" class="speech sb1">
           Gin [ɡɪŋ] gi [ɡe] le [le]<br> Gingile[ɡɪŋɡele]
           <span class="success-checkmark" onclick="hide('Gingile'); showNext();"></span>
+        </div>
         </div>
     </div>
 
