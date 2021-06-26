@@ -40,6 +40,7 @@ function show(id){
 function showintro(){
   document.getElementById('intro').style.display = "block";
   document.getElementById('name').style.display = "none";
+   document.getElementById('name').style.display = "begin";
   
 }
 
