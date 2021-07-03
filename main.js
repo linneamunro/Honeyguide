@@ -167,8 +167,8 @@ function highlightNgede(){
 function highlightGingile(){
   highlight('ɡɪŋ');
   setTimeout(unhighlight, 1600, 'ɡɪŋ');
-  setTimeout(highlight, 1600, 'ɡe');
-  setTimeout(unhighlight, 3100, 'ɡe');
+  setTimeout(highlight, 1600, 'ɡi');
+  setTimeout(unhighlight, 3100, 'ɡi');
   setTimeout(highlight, 3100, 'le');
   setTimeout(unhighlight, 4500, 'le');
   setTimeout(highlight, 4500, 'ɡɪŋɡele');
