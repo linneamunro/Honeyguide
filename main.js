@@ -164,7 +164,7 @@ function highlightNgede(){
   setTimeout(unhighlight, 4500, 'de');
   setTimeout(highlight, 4500, 'ŋɡede');
 }
-function highlightGingele(){
+function highlightGingile(){
   highlight('ɡɪŋ');
   setTimeout(unhighlight, 1600, 'ɡɪŋ');
   setTimeout(highlight, 1600, 'ɡe');
