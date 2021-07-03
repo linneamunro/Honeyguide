@@ -161,6 +161,6 @@ function highlightNgede(){
   setTimeout(highlight, 1600, 'ɡe');
   setTimeout(unhighlight, 3100, 'ɡe');
   setTimeout(highlight, 3100, 'de');
-  setTimeout(unhighlight, 4100, 'de');
-  setTimeout(highlight, 4100, 'ŋɡede');
+  setTimeout(unhighlight, 4500, 'de');
+  setTimeout(highlight, 4500, 'ŋɡede');
 }
