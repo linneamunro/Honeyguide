@@ -155,3 +155,7 @@ function highlight(id){
 function unhighlight(id){
   document.getElementById(id).style.backgroundColor = "transparent";
 }
+function highlightNgede(){
+  highlight('ŋ');
+  setTimeout(unighlight, 1000, 'ŋ');
+}
