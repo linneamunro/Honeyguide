@@ -157,10 +157,10 @@ function unhighlight(id){
 }
 function highlightNgede(){
   highlight('ŋ');
-  setTimeout(unhighlight, 2000, 'ŋ');
-  setTimeout(highlight, 2000, 'ɡe');
-  setTimeout(unhighlight, 4000, 'ɡe');
-  setTimeout(highlight, 4000, 'de');
-  setTimeout(unhighlight, 6000, 'de');
-  setTimeout(highlight, 6000, 'ŋɡede');
+  setTimeout(unhighlight, 1600, 'ŋ');
+  setTimeout(highlight, 1600, 'ɡe');
+  setTimeout(unhighlight, 3100, 'ɡe');
+  setTimeout(highlight, 3100, 'de');
+  setTimeout(unhighlight, 4600, 'de');
+  setTimeout(highlight, 4600, 'ŋɡede');
 }
