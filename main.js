@@ -36,7 +36,9 @@ function toggle(id){
 function show(id){
   document.getElementById(id).style.display = "block";
 }
-
+function showInline(id){
+  document.getElementById(id).style.display = "inline";
+}
 function showintro(){
   document.getElementById('intro').style.display = "block";
   document.getElementById('name').style.display = "none";
