@@ -165,7 +165,7 @@ function highlightNgede(){
   setTimeout(highlight, 3100, 'de');
   setTimeout(unhighlight, 4500, 'de');
   setTimeout(highlight, 4500, 'ŋɡede');
-  setTimeout(show, 5000, 'Check1');
+  setTimeout(showInline, 5000, 'Check1');
 }
 function highlightGingile(){
   highlight('ɡɪŋ');
@@ -175,5 +175,5 @@ function highlightGingile(){
   setTimeout(highlight, 3100, 'le');
   setTimeout(unhighlight, 4500, 'le');
   setTimeout(highlight, 4500, 'ɡɪŋɡele');
-  setTimeout(show, 5000, 'Check2');
+  setTimeout(showInline, 5000, 'Check2');
 }
