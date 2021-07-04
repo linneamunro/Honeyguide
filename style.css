@@ -237,10 +237,8 @@
 }
 
 .theEnd{
-  float: middle;
-  font-size: 2vw;
-  word-wrap: break-word;
-  text-overflow: clip;
+  text-align: center;
+  font-size: 5vw;
   display: block;
   margin-top: 6vw;
   width: 40vw;
