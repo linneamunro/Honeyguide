@@ -236,6 +236,16 @@
   padding-left: 20px
 }
 
+.theEnd{
+  float: middle;
+  font-size: 2vw;
+  word-wrap: break-word;
+  text-overflow: clip;
+  display: block;
+  margin-top: 6vw;
+  width: 40vw;
+}
+
 .mySlides {
   display: none;
 }
