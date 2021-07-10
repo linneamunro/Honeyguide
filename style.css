@@ -165,6 +165,21 @@
   line-height: 2.2vw;
 }
 
+.speechsmall{
+  width: 17vw;
+  margin-left: 51%;
+  margin-top: 3vw;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1vw;
+  border-radius: 9px;
+  color: black;
+  position: absolute;
+  line-height: 2.2vw;
+}
+
 .sb1:before {
   content: "";
   width: 0px;
