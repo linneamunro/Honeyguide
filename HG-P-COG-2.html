@@ -15,12 +15,6 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>  
         <img class="pic" src="/images/Cover.jpg">
-        <audio id="2.A">
-          <source src="/sounds/2.A.mp3">
-        </audio> 
-        <audio id="2.B">
-          <source src="/sounds/2.B.mp3">
-          </audio>
         <img class="avatar"  src="/images/Avatar.png">
         <i id="click1" class="fa fa-arrow-right" style="display: none;"></i>
         <div style="width: 37%;margin-left: 50%; margin-top: 5vw; height: 20vw; position: absolute; float: right; vertical-align: middle; text-align: center;">
@@ -29,22 +23,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro();">Press to Begin</button>
-        </div>
-    
-        <div id="Ngede" style="display: none;" class="speech sb1">
-            <span id="ŋ" style= "background-color:white;">N [ŋ]</span>
-            <span id="ɡe" style= "background-color:white;"> ge [ɡe]</span>
-            <span id="de" style= "background-color:white;"> de [de]</span> <br>
-            <span id="ŋɡede" style= "background-color:white;"> Ngede [ŋɡede] </span>
-            <span id="Check1" class="success-checkmark" style="display: none;" onclick="show('Gingile'); hide('Ngede'); play('2.B'); highlightGingile()"></span>
-          </div>
-        <div id="Gingile" style="display: none;" class="speech sb1">
-            <span id="ɡɪŋ" style= "background-color:white;">Gin [ɡɪŋ]</span>
-            <span id="ɡi" style= "background-color:white;"> gi [ɡe]</span>
-            <span id="le" style= "background-color:white;"> le [le]</span> <br>
-            <span id="ɡɪŋɡele" style= "background-color:white;"> Gingile [ɡɪŋɡele] </span>
-            <span id="Check2" class="success-checkmark" style="display: none;" onclick="hide('Gingile'); showNext();"></span>
+           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro(); shownext()">Press to Begin</button>
         </div>
           
         <div id="intro" style="width: 35vw; display: none; text-align:left;" class="speech sb1">
@@ -52,22 +31,54 @@
           How does the smoking stick work? When there is smoke the bees cannot detect alarm signals that would normally cause them to attack an intruder. 
           Smoke also makes them think there is a forest fire so they eat a lot of honey before leaving their hive to look for a new home. 
           It is hard for them to sting when they are full of honey. "
-          <span class="success-checkmark" onclick="hide('intro'); show('Ngede'); play('2.A'); highlightNgede()"></span>
+          <span class="success-checkmark" onclick="hide('intro');"></span>
         </div>
         </div>
     </div>
 
     <!-- Second slide -->
-    <div class="mySlides fade">
+     <div class="mySlides fade">
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s1.jpg">
+        <audio id="2.A">
+          <source src="/sounds/2.A.mp3">
+        </audio> 
+        <audio id="2.B">
+          <source src="/sounds/2.B.mp3">
+        </audio>
+        <img id="firstAvatar" class="avatar" src="/images/Avatar.png">
+        <i id="click2" class="fa fa-arrow-right" style="display: none;"></i>
+        <div id="showThird" class="toggleButton" style="display: none;" onclick="show('Ngede'); hide('showThird')">Show S</div>
+        <div id="Ngede" class="dictionary">
+          <span id="ŋ" style= "background-color:white;">N [ŋ]</span>
+          <span id="ɡe" style= "background-color:white;"> ge [ɡe]</span>
+          <span id="de" style= "background-color:white;"> de [de]</span> <br>
+          <span id="ŋɡede" style= "background-color:white;"> Ngede [ŋɡede] </span>
+          <span class="success-checkmark" onclick="highlight('Gingile_word'); show('Gingile'); hide('Ngede')"></span>
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
+        </div>
+        <div id="Gingile" class="dictionary">
+          <span id="ɡɪŋ" style= "background-color:lightgrey;">Gin [ɡɪŋ]</span>
+          <span id="ɡi" style= "background-color:lightgrey;"> gi [ɡe]</span>
+          <span id="le" style= "background-color:lightgrey;"> le [le]</span> <br>
+          <span id="ɡɪŋɡele" style= "background-color:lightgrey;"> Gingile [ɡɪŋɡele] </span>
+          <span class="success-checkmark" onclick="highlight('Gingile_word'); hide('Gingile'); showNext(); show('click2')"></span>
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
+        </div>
         <div class="words">Today you will read the story of The Honey Guide. This is the story of 
           <span id="Ngede_word">Ngede</span>, the Honeyguide, and a greedy
            young man named <span id="Gingile_word">Gingile</span>.
+           <span id="firstCheck1" class="success-checkmark2" onclick="highlight('Ngede_word'); show('Ngede'); hide('firstCheck1')"></span>
           </div>
+        <audio src="/sounds/success.wav"></audio>
+        <audio src="/sounds/failure.wav"></audio>
+        <audio src="/sounds/error.mp3"></audio>
+        <div id="Ngede"style="width: 5%; height: 5vw; background-color: transparent; margin-left: 36%; margin-top: 10vh; cursor: pointer; position: absolute;" onclick="clickNgede()"></div>
+        <div id="Gingile" style="width: 8%; height: 20vw; margin-top: 10vw; margin-left: 26vw; cursor: pointer; background-color: transparent; position: absolute;" onclick="clickG()"></div>
       </div>
-    </div>
   
     <!-- Third slide -->
     <div class="mySlides fade">
