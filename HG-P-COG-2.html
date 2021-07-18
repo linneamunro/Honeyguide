@@ -23,7 +23,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro(); showNext()">Press to Begin</button>
+           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro(); showNext(); ">Press to Begin</button>
         </div>
           
         <div id="intro" style="width: 35vw; display: none; text-align:left;" class="speech sb1">
@@ -48,7 +48,7 @@
         </audio>
         <img id="firstAvatar" class="avatar" src="/images/Avatar.png">
         <i id="click2" class="fa fa-arrow-right" style="display: none;"></i>
-        <div id="showThird" class="toggleButton" style="display: none;" onclick="show('Ngede'); hide('showThird')">Show S</div>
+        <div id="showThird" class="toggleButton" style="display: none;" onclick="highlight('Ngede_word'); show('Ngede'); hide('showThird')">Show Pronunciation</div>
         <div id="Ngede" class="dictionary">
           <span id="ŋ" style= "background-color:white;">N [ŋ]</span>
           <span id="ɡe" style= "background-color:white;"> ge [ɡe]</span>
@@ -70,7 +70,6 @@
         <div class="words">Today you will read the story of The Honey Guide. This is the story of 
           <span id="Ngede_word">Ngede</span>, the Honeyguide, and a greedy
            young man named <span id="Gingile_word">Gingile</span>.
-           <span id="firstCheck1" class="success-checkmark2" onclick="highlight('Ngede_word'); show('Ngede'); hide('firstCheck1')"></span>
           </div>
         <audio src="/sounds/success.wav"></audio>
         <audio src="/sounds/failure.wav"></audio>
