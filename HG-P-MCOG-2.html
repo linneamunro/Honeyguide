@@ -49,6 +49,7 @@
         </audio>
         <img id="firstAvatar" class="avatar" src="/images/Avatar.png">
         <i id="click2" class="fa fa-arrow-right" style="display: none;"></i>
+        <div id="showPronunciation" class="toggleButton" style="display: none;" onclick="highlight('Ngede_word'); show('NgedeDef'); hide('firstCheck1'); play('2.A'); highlightNgede(); hide('showPronunciation')">Show Pronunciation</div>
         <div id="NgedeDef" class="dictionary">
           <span id="ŋ" style= "background-color:lightgrey;">N [ŋ]</span>
           <span id="ɡe" style= "background-color:lightgrey;"> ge [ɡe]</span>
@@ -70,7 +71,6 @@
         <div class="words">Today you will read the story of The Honey Guide. This is the story of 
           <span id="Ngede_word">Ngede</span>, the Honeyguide, and a greedy
            young man named <span id="Gingile_word">Gingile</span>.
-            <span id="firstCheck1" class="success-checkmark2" onclick="highlight('Ngede_word'); show('Ngede'); hide('firstCheck1'); highlightNgede();"></span>
           </div>
         <audio src="/sounds/success.wav"></audio>
         <audio src="/sounds/failure.wav"></audio>
