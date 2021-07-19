@@ -53,6 +53,10 @@ function hide(id){
 function showNext(){
   document.getElementById("n").style.display = "block";
 }
+function showNext2(){
+  document.getElementById("n2").style.display = "block";
+}
+
 
 function begin(){
   document.getElementById("intro").style.display = "block";
