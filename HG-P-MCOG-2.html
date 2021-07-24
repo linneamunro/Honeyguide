@@ -113,7 +113,9 @@
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s2.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="trusted" class="dictionary" style="margin-top: -2vw; width: 30vw;">
+        <div id="hideDef2" class="toggleButton" style="display: none;" onclick="hide('trusted'); hide('hideDef2'); show('showDef2'); unhighlight('trusted_word');">Hide Question</div>
+        <div id="showDef2" class="toggleButton" style="display: block;" onclick="show('trusted'); show('hideDef2'); hide('showDef2'); highlight('trusted_word');">Show Question</div>
+        <div id="trusted" class="dictionary" style="margin-top: -2vw; width: 30vw;">  
           <b style="background-color: lightgray;">Trusted (verb)</b> <br>Feels sure that the other character will give truthful or accurate information.
           <span class="success-checkmark" onclick="showNext(); hide('trusted')"></span>
           <div class="bubble3"></div>
