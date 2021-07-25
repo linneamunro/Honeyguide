@@ -139,7 +139,7 @@
         </audio> 
         <img class="pic" src="/images/s3.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ');">Show Definition</div>
+        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ');">Show Question</div>
         <div id="fourth" style="display: none;" class="speech sb1">Do you remember why Gingile needs a smoking stick?
           <span class="success-checkmark" onclick="showNext(); hide('fourth')"></span>
         </div>
@@ -155,19 +155,25 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s4.jpg">
+        <audio id="2.4">
+          <source src="/sounds/MCOG-2/2.4.mp3">
+        </audio> 
+        <audio id="2.5">
+          <source src="/sounds/MCOG-2/2.4.mp3">
+        </audio> 
         <img class="avatar" src="/images/Avatar.png">
+        <div id="showQ6" class="toggleButton" style="display: block;" onclick="play('2.4'); show('hive'); hide('showQ6'); highlight('hive_word');">Show Question</div>
         <div id="hive" class="multiple arrow" style="display: none; width: 45vw; margin-left: 15vw; margin-top: 11vw;">
           Where did Gingile find the bees? <br> <span style="font-size: 1vw; background-color: whitesmoke;">(Click the correct picture)</span> <br><br>
           <img class="multImg" onclick="failure()" src="images/q1.PNG">
           <img class="multImg" onclick="failure()" src="images/q2.PNG">
           <img class="multImg" onclick="failure()" src="images/q3.PNG">
-          <img class="multImg" onclick="success(); hide('hive'); showNext()" src="images/q4.PNG">
+          <img class="multImg" onclick="success(); hide('hive'); showNext(); play('2.5');" src="images/q4.PNG">
         </div>
         <div class="words">Soon he could hear the loud buzzing of the busy bees. They were coming in and out of a hollow in the tree trunk – their 
           <span id="hive_word">hive</span>. 
           When Gingile reached the hive he pushed the smoking end of the stick into the hollow. The bees came rushing out, angry and mean. They flew away because they didn’t 
           like the smoke – but not before they had given Gingile some painful stings!
-          <span id="fifthCheck1" class="success-checkmark2" onclick="highlight('hive_word'); show('hive'); hide('fifthCheck1')"></span>
         </div>
       </div>
     </div>
