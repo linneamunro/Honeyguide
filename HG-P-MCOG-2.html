@@ -90,10 +90,13 @@
     <div class="mySlides fade">
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
+        <audio id="2.1">
+          <source src="/sounds/2.1.mp3">
+        </audio> 
         <img class="pic" src="/images/s1.jpg">
         <img class="avatar"  src="/images/Avatar.png">
         <div id="hideThird" class="toggleButton" style="display: none;" onclick="hide('chitik'); hide('hideThird'); show('showThird')">Hide Question</div>
-        <div id="showThird" class="toggleButton" style="display: block;" onclick="show('chitik'); show('hideThird'); hide('showThird'); highlight('chitik_word');">Show Question</div>
+        <div id="showThird" class="toggleButton" style="display: block;" onclick="play('2.1'); show('chitik'); show('hideThird'); hide('showThird'); highlight('chitik_word');">Show Question</div>
         <div id="chitik" class="multiple arrow2" style="margin-left: 14vw; margin-top: 1vw; height: 20vw; display: none;">
           Why does Gingele's mouth water when he hear's the little bird's call "chitik-chitik-chitik"?<br>
           <br><span class="choice" onclick="success(); showNext(); hide('chitik'); hide('hideThird')">(a) He knew the bird would lead him to honey</span>
@@ -168,7 +171,7 @@
           <img class="multImg" onclick="failure()" src="images/q1.PNG">
           <img class="multImg" onclick="failure()" src="images/q2.PNG">
           <img class="multImg" onclick="failure()" src="images/q3.PNG">
-          <img class="multImg" onclick="success(); hide('hive'); showNext(); play('2.4.B');" src="images/q4.PNG">
+          <img class="multImg" onclick="hide('hive'); showNext(); play('2.4.B');" src="images/q4.PNG">
         </div>
         <div class="words">Soon he could hear the loud buzzing of the busy bees. They were coming in and out of a hollow in the tree trunk – their 
           <span id="hive_word">hive</span>. 
