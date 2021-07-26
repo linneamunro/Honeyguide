@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,7 +32,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="begin(); play('introsound');">Press to Begin</button>
+           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="begin();">Press to Begin</button>
         </div>
         <div id="intro" style="width: 35vw; display: none;" class="speech sb1">You will read the story "The Honeyguide's Revenge." &nbsp;This story is a folktale told by the Zulu people in Africa. &nbsp;A folktale is a traditional 
           story that is passed down from one generation to another by word of mouth. &nbsp;Folktales usually explain something. &nbsp;Often folktales are a 
@@ -50,13 +49,13 @@
         <img class="pic" src="/images/s1.jpg">
         <img id="firstAvatar" class="avatar" src="/images/Avatar.png">
         <audio id="1.1A">
-          <source src="/sounds/1.1A.mp3">
+          <source src="/sounds/MCOG-1/1.1A.mp3">
         </audio>
         <audio id="1.1B">
-          <source src="/sounds/1.1B.mp3">
+          <source src="/sounds/MCOG-1/1.1B.mp3">
         </audio>
         <div class="words">Today you will read the story of The Honey Guide. This is the story of Ngede, the Honeyguide, and a greedy young man named Gingile.
-          <span id="firstCheck1" class="success-checkmark2" onclick="show('firstq1'); hide('firstCheck1'); play('1.1A')"></span>
+          <span id="firstCheck1" class="success-checkmark2" onclick="show('firstq1'); hide('firstCheck1');"></span>
         </div>
         <div id="firstq1" style="display: none; width: 18vw;" class="speech sb1">Look at the picture. Who is Ngede? Click him on the picture</div>
         <div id="firstq2" style="display: none;" class="speech sb1">Look at the picture. Who is Gingile? Click him on the picture</div>
@@ -84,14 +83,14 @@
         <div id="secondq1" style="display: none;" class="speech sb1">Click the highlighted text</div>
         <div id="rattled" class="dictionary" style="margin-top: 5vw; margin-left: 62vw; display: none;">
           <b style="background-color: lightgray;">Rattled (verb, past tense).</b> <br>1. Made a rapid sequence of short sharp noises. <br>2. Chattered on-and-on.
-          <span id="secondCheck2" class="success-checkmark2" onclick="showNext(); hide('rattled'); stop('1.1');"></span>
+          <span id="secondCheck2" class="success-checkmark2" onclick="showNext(); hide('rattled');"></span>
         </div>
         <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, 
-          searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird <span id="rattled_word" onclick="play('1.1s')"> rattled</span>, as he flew to the next tree, and the next. 
+          searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird <span id="rattled_word"> rattled</span>, as he flew to the next tree, and the next. 
           “Chitik, chitik, chitik,” he called, stopping from time to time to be sure that Gingile followed.
-          <span id="secondCheck1" class="success-checkmark2" onclick="highlight('rattled_word'); show('rattled');  hide('secondCheck1'); play('1.1');"></span>
+          <span id="secondCheck1" class="success-checkmark2" onclick="highlight('rattled_word'); show('rattled');  hide('secondCheck1');"></span>
         </div>
-        <div style="width: 5%; height: 5vw; background-color: transparent; margin-left: 36%; margin-top: 10vh; cursor: pointer; position: absolute;" onclick="play('1.1s')"></div>
+        <div style="width: 5%; height: 5vw; background-color: transparent; margin-left: 36%; margin-top: 10vh; cursor: pointer; position: absolute;"></div>
       </div>
     </div>
 
@@ -102,7 +101,7 @@
         <img class="pic" src="/images/s2.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.2">
-          <source src="/sounds/1.2.mp3">
+          <source src="/sounds/MCOG-1/1.2.mp3">
         </audio>
         <div id="thirdq1" class="multiple arrow" style="display: none;">
           Which one of these fruits is a fig? Click the correct fruit. <br><br>
@@ -112,7 +111,7 @@
         </div>
         <div class="words">After half an hour, they reached a huge wild <span id="fig_word">fig</span> tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at 
           Gingile as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he trusted Ngede.
-          <span id="thirdCheck1" class="success-checkmark2" onclick="highlight('fig_word'); show('thirdq1');  hide('thirdCheck1'); play('1.2')"></span>
+          <span id="thirdCheck1" class="success-checkmark2" onclick="highlight('fig_word'); show('thirdq1');  hide('thirdCheck1');"></span>
         </div>
       </div>
     </div>
@@ -124,14 +123,14 @@
         <img class="pic" src="/images/s3.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.3">
-          <source src="/sounds/1.3.mp3">
+          <source src="/sounds/MCOG-1/1.3.mp3">
         </audio>
         <div id="fourth" style="display: none; width: 20vw;" class="speech sb1">I wonder why Gingele needs a smoking stick?
           <span id="fourthCheck2" class="success-checkmark2" onclick=" showNext();  hide('fourth'); stop('1.3')"></span>
         </div>
         <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick
            into the heart of the fire. This wood was especially known to make lots of smoke while it burned. He began climbing, holding the cool end of the <span id="smoking_word">smoking stick</span> in his teeth.
-           <span id="fourthCheck1" class="success-checkmark2" onclick="highlight('smoking_word'); show('fourth');  hide('fourthCheck1'); play('1.3')"></span>
+           <span id="fourthCheck1" class="success-checkmark2" onclick="highlight('smoking_word'); show('fourth');  hide('fourthCheck1');"></span>
           </div>
       </div>
     </div>
@@ -143,7 +142,7 @@
         <img class="pic" src="/images/s4.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.4">
-          <source src="/sounds/1.4.mp3">
+          <source src="/sounds/MCOG-1/1.4.mp3">
         </audio>
         <div id="hive" class="dictionary" style="margin-top: 4vw; margin-left: 30vw; display: none;">
           <b style="background-color: lightgray;">Hive (noun).</b> <br>A shelter for a colony of bees.
@@ -154,7 +153,7 @@
         <div class="words">Soon he could hear the loud buzzing of the busy bees. They were coming in and out of a hollow in the tree trunk – their <span id="hive_word">hive</span>. When Gingile reached the hive
            he pushed the smoking end of the stick into the hollow. The bees came rushing out, angry and mean. They flew away because they didn’t like the smoke – but not before they had
            given Gingile some painful stings!
-           <span id="fifthCheck1" class="success-checkmark2" onclick="highlight('hive_word'); show('hive');  hide('fifthCheck1'); play('1.4')"></span>
+           <span id="fifthCheck1" class="success-checkmark2" onclick="highlight('hive_word'); show('hive');  hide('fifthCheck1');"></span>
           </div>
       </div>
     </div>
@@ -166,7 +165,7 @@
         <img class="pic" src="/images/s5.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.5">
-          <source src="/sounds/1.5.mp3"> 
+          <source src="/sounds/MCOG-1/1.5.mp3"> 
         </audio>
         <div id="comb" class="multiple arrow" style="margin-left: 16vw; height: 8vw; margin-top: 18vw; display: none;">
           Gingile wanted the bee's honey so he took their <input id="input1" style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
@@ -175,7 +174,7 @@
         </div>
         <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, white grubs. 
           He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the <span id="tree_word">tree</span>.
-          <span id="sixthCheck" class="success-checkmark2" onclick="highlight('tree_word'); show('comb');  hide('sixthCheck'); play('1.5')"></span>
+          <span id="sixthCheck" class="success-checkmark2" onclick="highlight('tree_word'); show('comb');  hide('sixthCheck');"></span>
         </div>
       </div>
     </div>
@@ -187,13 +186,13 @@
         <img class="pic" src="/images/s6.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.6">
-          <source src="/sounds/1.6.mp3">
+          <source src="/sounds/MCOG-1/1.6.mp3">
         </audio>
         <div id="seventh" style="display: none;" class="speech sb1">Ngede is expecting a reward. Do you think that the Honeyguide deserves a reward? <br><br> <span class="choice"; style="background-color: white; cursor: pointer;" onclick="showNext(); hide('seventh'); stop('1.6')">(a) Yes </span> <br> <span class="choice"; style="background-color: white; cursor: pointer;" onclick="showNext(); hide('seventh'); stop('1.6')">(b) No </span></div>
         <div class="words">Ngede eagerly watched everything that Gingile was doing. He was waiting for him to leave a fat piece of honeycomb as a thank-you offering to the Honeyguide. 
           Ngede flittered from branch to branch, closer and closer to the ground. Finally Gingile reached the bottom of the tree. Ngede perched on a rock near the boy and waited for his 
           reward.
-          <span id="seventhCheck" class="success-checkmark2" onclick=" show('seventh'); hide('seventhCheck'); play('1.6')"></span>
+          <span id="seventhCheck" class="success-checkmark2" onclick=" show('seventh'); hide('seventhCheck');"></span>
         </div>
       </div>
     </div>
@@ -205,7 +204,7 @@
         <img class="pic" src="/images/s7.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.7">
-          <source src="/sounds/1.7.mp3">
+          <source src="/sounds/MCOG-1/1.7.mp3">
         </audio>
         <div id="furious" class="multiple arrow2" style="margin-left: 7vw; margin-top: 3vw; height: 23vw; display: none; text-align: start;">
           Ngede is furious. Which of these words is a synonym for furious? Click all the words that mean the same thing as furious:<br>
@@ -218,7 +217,7 @@
         <div class="words">But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird. Ngede called out angrily, “VIC-torr! VIC-torrr!” Gingile 
           stopped, stared at the little bird and laughed aloud. “You want some honey, do you, my friend? Ha! But I did all the work, and got all the stings. Why should I share any of 
           this lovely honey with you?” Then he walked off. Ngede was <span id="furious_word">furious</span>! This was no way to treat him! But he would get his revenge.
-          <span id="eightCheck" class="success-checkmark2" onclick="highlight('furious_word'); show('furious'); hide('eightCheck'); play('1.7')"></span>
+          <span id="eightCheck" class="success-checkmark2" onclick="highlight('furious_word'); show('furious'); hide('eightCheck');"></span>
         </div>
       </div>
     </div>
@@ -230,7 +229,7 @@
         <img class="pic" src="/images/s8.jpg">
         <img class="avatar" src="/images/Avatar.png">
         <audio id="1.8">
-          <source src="/sounds/1.8.mp3">
+          <source src="/sounds/MCOG-1/1.8.mp3">
         </audio>
         <div id="ninth" style="display: none; width: 25vw;" class="speech sb1">Gingele is eagerly following the honeyguide bird because he is sure that Ngede will lead him to more honey. He can't wait to find a new hive. I wonder if there is a beehive in this tree? What do you think? Let's find out.
           <span id="ninthCheck2" class="success-checkmark2" onclick="showNext(); hide('ninth'); stop('1.8')"></span>
@@ -238,7 +237,7 @@
         <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the delicious honey, and <span id="eagerly_word">eagerly</span> followed the bird once again. 
           After leading Gingile along the edge of the forest, Ngede stopped to rest in a great umbrella thorn. “Ahh,” thought Gingile. “The hive must be in this tree.” He quickly 
           made his small fire and began to climb, the smoking branch in his teeth. Ngede sat and watched.
-          <span id="ninthCheck" class="success-checkmark2" onclick="highlight('eagerly_word'); show('ninth'); hide('ninthCheck'); play('1.8')"></span>
+          <span id="ninthCheck" class="success-checkmark2" onclick="highlight('eagerly_word'); show('ninth'); hide('ninthCheck');"></span>
         </div>
       </div>
     </div>
@@ -250,7 +249,7 @@
         <img class="pic" src="/images/s9.jpg">
         <img class="avatar" onclick="toggle('tenth')" src="/images/Avatar.png">
         <audio id="1.9">
-          <source src="/sounds/1.9.mp3">
+          <source src="/sounds/MCOG-1/1.9.mp3">
         </audio>
         <div id="tenth" style="display: none;" class="speech sb1">Click the highlighted text</div>
         <div id="reveal" class="dictionary" style="margin-top: 16vw; margin-left: 30vw; display: none;">
@@ -262,7 +261,7 @@
         <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another 
           branch. But instead of the hive, he was staring into the face of a leopard! Leopard was very angry at having her sleep so rudely interrupted. She narrowed her eyes, opened 
           her mouth to <span id="reveal_word">reveal</span> her very large and very sharp teeth.
-          <span id="tenthCheck" class="success-checkmark2" onclick="highlight('reveal_word'); show('reveal'); hide('tenthCheck'); play('1.9')"></span>
+          <span id="tenthCheck" class="success-checkmark2" onclick="highlight('reveal_word'); show('reveal'); hide('tenthCheck');"></span>
         </div>
       </div>
     </div>
@@ -274,7 +273,7 @@
         <img class="pic" src="/images/s10.jpg">
         <img class="avatar" onclick="toggle('eleventh')" src="/images/Avatar.png">
         <audio id="1.10">
-          <source src="/sounds/1.10.mp3">
+          <source src="/sounds/MCOG-1/1.10.mp3">
         </audio>
         <div id="eleventh" style="display: none; width: 30vw; text-align: start;" class="speech sb1">How did Ngede have his revenge? 
           <span style="font-weight: normal;">
@@ -286,7 +285,7 @@
         <div class="words">Before Leopard could take a swipe at Gingile, he rushed down the tree. In his hurry he missed a branch, and landed with a heavy thud on the ground twisting
            his ankle. He hobbled off as fast as he could. Luckily for him, Leopard was still too sleepy to chase him. Ngede, the Honeyguide, had his <span id="revenge_word">revenge</span>. And Gingile learned his 
            lesson.
-           <span id="eleventhCheck" class="success-checkmark2" onclick="highlight('revenge_word'); show('eleventh'); hide('eleventhCheck'); play('1.10')"></span>
+           <span id="eleventhCheck" class="success-checkmark2" onclick="highlight('revenge_word'); show('eleventh'); hide('eleventhCheck');"></span>
           </div>
       </div>
     </div>
@@ -298,7 +297,7 @@
         <img class="pic" src="/images/s11.jpg">
         <img class="avatar"  src="/images/Avatar.png">
         <audio id="1.11">
-          <source src="/sounds/1.11.mp3">
+          <source src="/sounds/MCOG-1/1.11.mp3">
         </audio>
         <div id="twelfth" style="display: none; width: 30vw;" class="speech sb1">Now you have heard the story of Ngede. You have learned the lesson too. You have learned to have respect for 
           <span style="font-weight: normal;">
@@ -307,7 +306,7 @@
         </span>
         </div>
         <div class="words">And so, when the children of Gingile hear the <span id="story_word">story of Ngede</span> they have respect for the little bird. Whenever they harvest honey, they make sure to leave the biggest part of the comb for Honeyguide!
-          <span id="twelfthCheck" class="success-checkmark2" onclick="highlight('story_word'); show('twelfth'); hide('twelfthCheck'); play('1.11')"></span>
+          <span id="twelfthCheck" class="success-checkmark2" onclick="highlight('story_word'); show('twelfth'); hide('twelfthCheck');"></span>
         </div>
       </div>
     </div>
