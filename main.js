@@ -187,3 +187,7 @@ function highlightGingile(){
   setTimeout(highlight, 4500, 'ɡɪŋɡele');
   setTimeout(showInline, 5000, 'Check2');
 }
+
+function waitShowNext(time){
+  setTimeout(showNext, time)
+}
