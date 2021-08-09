@@ -189,5 +189,5 @@ function highlightGingile(){
 }
 
 function waitShowNext(time){
-  setTimeout(showNext, time)
+  setTimeout(showNext, time);
 }
