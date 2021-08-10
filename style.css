@@ -76,8 +76,9 @@
 .multImg{
   width: 10vw;
   height: auto;
-  padding: 1vw;
+  padding: 1.5vw;
   cursor: pointer;
+  background:whitesmoke;
 }
 
 
