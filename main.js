@@ -192,5 +192,5 @@ function waitShowNext(time){
   setTimeout(showNext, time);
 }
 function waitShow(item, time){
-  setTimeout(showInline, time, item);
+  setTimeout(show, time, item);
 }
