@@ -194,3 +194,7 @@ function waitShowNext(time){
 function waitShow(item, time){
   setTimeout(show, time, item);
 }
+
+function waitShowInline(item, time){
+  setTimeout(showInline, time, item);
+}
