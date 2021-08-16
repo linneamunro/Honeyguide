@@ -126,11 +126,12 @@
         </audio> 
         <img class="pic" src="/images/s2.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showDef" class="toggleButton" style="display: block;" onclick="play('2.2'); show('trusted'); hide('showDef'); highlight('trusted_word'); waitShowNext(10000);">Show Definition</div>
+        <div id="showDef" class="toggleButton" style="display: block;" onclick="play('2.2'); show('trusted'); hide('showDef'); highlight('trusted_word'); waitShowInline('check4', 10000);">Show Definition</div>
         <div id="trusted" class="dictionary" style="margin-top: -2vw; width: 30vw;">  
           <b style="background-color: lightgray;">Trusted (verb)</b> <br>Feels sure that the other character will give truthful or accurate information.
           <div class="bubble3"></div>
           <div class="bubble4"></div>
+        <span id="check4" style="display: none;" class="success-checkmark" onclick="showNext(); hide('trusted')"></span>
         </div>
         <div class="words">After half an hour, they reached a huge wild fig tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at Gingile 
           as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he 
