@@ -148,9 +148,9 @@
         </audio> 
         <img class="pic" src="/images/s3.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ');">Show Question</div>
+        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ'); waitShowInline(check5, 5000);">Show Question</div>
         <div id="fourth" style="display: none;" class="speech sb1">Do you remember why Gingile needs a smoking stick?
-          <span class="success-checkmark" onclick="showNext(); hide('fourth')"></span>
+          <span id="check5" class="success-checkmark" style="display: none" onclick="showNext(); hide('fourth')"></span>
         </div>
         <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick
            into the heart of the fire. This wood was especially known to make lots of smoke while it burned. He began climbing, holding the cool end of the 
