@@ -106,7 +106,7 @@
         <div id="showThird" class="toggleButton" style="display: block;" onclick="play('2.1'); show('chitik'); hide('showThird'); highlight('chitik_word'); show('hideThird')">Show Question</div>
         <div id="chitik" class="multiple arrow2" style="margin-left: 14vw; margin-top: 1vw; height: 25vw; display: none;">
           Why does Gingele's mouth water when he hears the little bird's call "chitik-chitik-chitik"?<br>
-          <br><span class="choice" onclick="success(); showNext(); hide('chitik'); hide('hideThird')">(a) He knew the bird would lead him to honey</span>
+          <br><span class="choice" onclick="success(); showNext(); hide('chitik'); hide('hideThird'); unhighlight('chitik_word')">(a) He knew the bird would lead him to honey</span>
           <br><span class="choice" onclick="failure();">(b) When he saw the bird in the branches, he also saw the bee hive</span>
           <br><span class="choice" onclick="failure();">(c) He was not successful in his hunting and was getting hungry</span>
         </div>
@@ -131,7 +131,7 @@
           <b style="background-color: lightgray;">Trusted (verb)</b> <br>Feels sure that the other character will give truthful or accurate information.
           <div class="bubble3"></div>
           <div class="bubble4"></div>
-        <span id="check4" style="display: none;" class="success-checkmark" onclick="showNext(); hide('trusted')"></span>
+        <span id="check4" style="display: none;" class="success-checkmark" onclick="showNext(); hide('trusted'); unhighlight('trusted_word')"></span>
         </div>
         <div class="words">After half an hour, they reached a huge wild fig tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at Gingile 
           as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he 
@@ -149,7 +149,8 @@
         </audio> 
         <img class="pic" src="/images/s3.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ'); waitShowInline('check5', 5000);">Show Question</div>
+        <div id="hideQ" class="toggleButton" style="display: none;" onclick="hide('fourth'); hide('hideQ'); show('showQ')">Hide Question</div>
+        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ'); waitShowInline('check5', 5000); show('hideQ')">Show Question</div>
         <div id="fourth" style="display: none;" class="speech sb1">Do you remember why Gingile needs a smoking stick?
           <span id="check5" class="success-checkmark" style="display: none" onclick="showNext(); hide('fourth')"></span>
         </div>
@@ -172,7 +173,8 @@
           <source src="/sounds/MCOG-2/2.4.B.mp3">
         </audio> 
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showQ6" class="toggleButton" style="display: block;" onclick="play('2.4.A'); show('hive'); hide('showQ6');">Show Question</div>
+        <div id="hideQ6" class="toggleButton" style="display: none;" onclick="hide('hive'); hide('hideQ6'); show('showQ6')">Hide Question</div>
+        <div id="showQ6" class="toggleButton" style="display: block;" onclick="play('2.4.A'); show('hive'); hide('showQ6'); show('hideQ6')">Show Question</div>
         <div id="hive" class="multiple arrow" style="display: none; height: 22vw; width: 45vw; margin-left: 30vw; margin-top: 9vw;">
           Where did Gingile find the bees? <br> <span style="font-size: 1.5vw; background-color: whitesmoke;">(Click the correct picture)</span> <br><br>
           <img class="multImg" onclick="failure()" src="images/q1.PNG">
@@ -195,12 +197,12 @@
         <img class="pic" src="/images/s5.jpg">
         <audio id="2.5">
           <source src="/sounds/MCOG-2/2.5.mp3">
-        </audio> 
-        <div id="showQ7" class="toggleButton" style="display: block;" onclick="play('2.5'); show('grubs'); hide('showQ7'); highlight('grub_word'); ">Show Definition</div>
+        </audio>
+        <div id="showQ7" class="toggleButton" style="display: block;" onclick="play('2.5'); show('grubs'); hide('showQ7'); highlight('grub_word'); waitShowInline('check7', 20000)">Show Definition</div>
         <img class="avatar" src="/images/Avatar.png">
         <div id="grubs" class="dictionary" style="margin-top: -6vw; width: 42vw;">
           <b style="background-color: lightgray;"> Grub (noun)</b> <br>Soft, worm-like larva of an insect. The larva is the first form that hatches from the egg. It undergoes several transformations before becoming the adult form of the insect.
-          <span class="success-checkmark" onclick="showNext(); hide('grubs')"></span>
+          <span id="check7" class="success-checkmark" style="display:none;" onclick="showNext(); hide('grubs')"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
@@ -220,10 +222,10 @@
         <audio id="2.6">
           <source src="/sounds/MCOG-2/2.6.mp3">
         </audio> 
-        <div id="showQ8" class="toggleButton" style="display: block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); ">Show Definition</div>
+        <div id="showQ8" class="toggleButton" style="display: block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); waitShowInline('check8', 15000); ">Show Definition</div>
         <div id="perched" class="dictionary" style="width: 35vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Perch (verb, present tense) or Perched (past tense)</b> <br>To rest on the edge of something or high up.
-          <span class="success-checkmark" onclick=" showNext(); hide('perched')"></span>
+          <span id="check8" class="success-checkmark" onclick=" showNext(); hide('perched')"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
@@ -243,7 +245,8 @@
         <audio id="2.7">
           <source src="/sounds/MCOG-2/2.7.mp3">
         </audio> 
-        <div id="showQ9" class="toggleButton" style="display: block;" onclick="play('2.7'); show('eight'); hide('showQ9');">Show Question</div>
+        <div id="hideQ9" class="toggleButton" style="display: none;" onclick="hide('eight'); hide('hideQ9'); show('showQ9')">Hide Question</div>
+        <div id="showQ9" class="toggleButton" style="display: block;" onclick="play('2.7'); show('eight'); hide('showQ9'); show('hideQ9')">Show Question</div>
         <div id="eight" style="display: none; width: 20vw;" class="speech sb1">
           Do you remember how Ngede gets his revenge?
           <span class="success-checkmark" onclick="showNext(); hide('eight')"></span>
@@ -264,7 +267,8 @@
         <audio id="2.8">
           <source src="/sounds/MCOG-2/2.8.mp3">
         </audio> 
-        <div id="showQ10" class="toggleButton" style="display: block;" onclick="play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word')">Show Question</div>
+       <div id="hideQ10" class="toggleButton" style="display: none;" onclick="hide('delicious'); hide('hideQ10'); show('showQ10')">Hide Question</div>
+        <div id="showQ10" class="toggleButton" style="display: block;" onclick="play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word'); show('hideQ10');">Show Question</div>
         <form onsubmit="success(); showNext(); hide('delicious'); return false;">
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
