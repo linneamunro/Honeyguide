@@ -245,7 +245,6 @@
         <audio id="2.7">
           <source src="/sounds/MCOG-2/2.7.mp3">
         </audio> 
-        <div id="hideQ9" class="toggleButton" style="display: none;" onclick="hide('eight'); hide('hideQ9'); show('showQ9')">Hide Question</div>
         <div id="showQ9" class="toggleButton" style="display: block;" onclick="play('2.7'); show('eight'); hide('showQ9'); show('hideQ9')">Show Question</div>
         <div id="eight" style="display: none; width: 20vw;" class="speech sb1">
           Do you remember how Ngede gets his revenge?
@@ -269,7 +268,7 @@
         </audio> 
        <div id="hideQ10" class="toggleButton" style="display: none;" onclick="hide('delicious'); hide('hideQ10'); show('showQ10')">Hide Question</div>
         <div id="showQ10" class="toggleButton" style="display: block;" onclick="play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word'); show('hideQ10');">Show Question</div>
-        <form onsubmit="success(); showNext(); hide('delicious'); return false;">
+        <form onsubmit="success(); showNext(); hide('delicious'); hide('hideQ10');return false;">
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
@@ -294,8 +293,9 @@
         <audio id="2.9">
           <source src="/sounds/MCOG-2/2.9.mp3">
         </audio> 
-        <div id="showQ11" class="toggleButton" style="display: block;" onclick="play('2.9'); show('sharp'); hide('showQ11');">Show Question</div>
-        <form onsubmit="success(); showNext(); hide('sharp'); return false;">
+        <div id="hideQ11" class="toggleButton" style="display: none;" onclick="hide('sharp'); hide('hideQ11'); show('showQ11')">Hide Question</div>
+        <div id="showQ11" class="toggleButton" style="display: block;" onclick="play('2.9'); show('sharp'); hide('showQ11'); show('hideQ11');">Show Question</div>
+        <form onsubmit="success(); showNext(); hide('sharp'); return false; hide('hideQ11');">
         <div id="sharp" class="multiple" style="margin-left: 45vw; height: 15vw; margin-top: 15vw; display: none;">
           Look at the picture. The leopard looks very surprised and angry.  The leopard revealed sharp
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
@@ -323,10 +323,11 @@
         <audio id="2.10">
           <source src="/sounds/MCOG-2/2.10.mp3">
         </audio> 
+        <div id="hideQ12" class="toggleButton" style="display: none;" onclick="hide('lesson'); hide('hideQ12'); show('showQ12')">Hide Question</div>
         <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide(showQ12);">Show Question</div>
-        <div id="lesson" class="multiple arrow2" style="margin-left: 36vw; margin-top: 1vw; height: 20vw; display: none;">
+        <div id="lesson" class="multiple" style="margin-left: 45vw; margin-top: 20vw; height: 20vw; display: none;">
           What lesson did Gingele learn?<br>
-          <br><span class="choice" onclick="success(); showNext(); hide('lesson')">(a) Gingele learned that he should share honey with the honeyguide.</span>
+          <br><span class="choice" onclick="success(); showNext(); hide('lesson'); hide('hideQ12');">(a) Gingele learned that he should share honey with the honeyguide.</span>
           <br><span class="choice" onclick="failure();">(b) Gingele learned to stay out of the umbrella thorn tree.</span>
           <br><span class="choice" onclick="failure()">(c) Gingele learned to not trust Ngede.</span>
         </div>
@@ -346,10 +347,10 @@
         <audio id="2.11">
           <source src="/sounds/MCOG-2/2.11.mp3">
         </audio> 
-        <div id="showQ13" class="toggleButton" style="display: block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('showQ13')">Show Question</div>
+        <div id="showQ13" class="toggleButton" style="display: block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('showQ13')">Show Definition</div>
         <div id="harvest" class="dictionary" style="width: 30vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Harvest (verb)</b> <br>To gather a crop or natural product for use, usually for eating.
-          <span class="success-checkmark" onclick="showNext(); hide('harvest')"></span>
+          <span class="success-checkmark" onclick="showNext(); hide('harvest'); hide('hideQ13');"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
