@@ -225,7 +225,7 @@
         <div id="showQ8" class="toggleButton" style="display: block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); waitShowInline('check8', 15000); ">Show Definition</div>
         <div id="perched" class="dictionary" style="width: 35vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Perch (verb, present tense) or Perched (past tense)</b> <br>To rest on the edge of something or high up.
-          <span id="check8" class="success-checkmark" onclick=" showNext(); hide('perched')"></span>
+          <span id="check8" class="success-checkmark" style="display: none" onclick="showNext(); hide('perched'); unhighlight('perched_word')"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
@@ -324,7 +324,7 @@
           <source src="/sounds/MCOG-2/2.10.mp3">
         </audio> 
         <div id="hideQ12" class="toggleButton" style="display: none;" onclick="hide('lesson'); hide('hideQ12'); show('showQ12')">Hide Question</div>
-        <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide(showQ12);">Show Question</div>
+        <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide(showQ12); show('hideQ12')">Show Question</div>
         <div id="lesson" class="multiple" style="margin-left: 45vw; margin-top: 20vw; height: 20vw; display: none;">
           What lesson did Gingele learn?<br>
           <br><span class="choice" onclick="success(); showNext(); hide('lesson'); hide('hideQ12');">(a) Gingele learned that he should share honey with the honeyguide.</span>
@@ -347,10 +347,10 @@
         <audio id="2.11">
           <source src="/sounds/MCOG-2/2.11.mp3">
         </audio> 
-        <div id="showQ13" class="toggleButton" style="display: block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('showQ13')">Show Definition</div>
+        <div id="showQ13" class="toggleButton" style="display: block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('showQ13'); waitShowInline('check13', 10000)">Show Definition</div>
         <div id="harvest" class="dictionary" style="width: 30vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Harvest (verb)</b> <br>To gather a crop or natural product for use, usually for eating.
-          <span class="success-checkmark" onclick="showNext(); hide('harvest'); hide('hideQ13');"></span>
+          <span id="check13" class="success-checkmark" style="display: none" onclick="showNext(); hide('harvest'); hide('hideQ13');"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
