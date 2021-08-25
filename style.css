@@ -77,7 +77,7 @@
   width: 10vw;
   height: auto;
   cursor: pointer;
-  maring: 1vw;
+  margin: 1vw;
   background:whitesmoke;
 }
 
@@ -193,6 +193,19 @@
   border-bottom: 10px solid transparent;
   left: -19px;
   top: 6px;
+}
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 3px;
 }
 
 .success-checkmark:after {
