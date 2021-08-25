@@ -32,7 +32,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('2.T'); show('intro'); waitShow('showVid', 37);">Press to Begin</button>
+           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('2.T'); show('intro'); waitShow('showVid', 37000);">Press to Begin</button>
         </div>
         <div id="intro" style="width: 35vw; display: none;" class="speech sb1">
           In this story "The Honeyguide's Revenge," Gingile gets honeycomb out of a hive. He uses a smoking stick to calm the bees first.
@@ -40,7 +40,7 @@
           Smoke also makes them think there is a forest fire so they eat a lot of honey before leaving their hive to look for a new home. 
           It is hard for them to sting when they are full of honey. Here is a video of bee keepers using smoke to calm the bees.
         </div>
-        <div id="showVid" class="toggleButton" style="display: none; top: 35vw; right: 84vw;" onclick="show('smokeVid'); waitShowNext(20); hide('beginbox'); hide('intro'); hide('coverPic'); hide('avatar');">Show Video</div>
+        <div id="showVid" class="toggleButton" style="display: none; top: 35vw; right: 84vw;" onclick="show('smokeVid'); waitShowNext(20000); hide('beginbox'); hide('intro'); hide('coverPic'); hide('avatar');">Show Video</div>
             <video id="smokeVid" width="900" style="display: none; position: fixed; margin-top: 3vw; margin-left: 17.5vw;" controls autoplay>
                  <source src="SmokeBee.mp4" type="video/mp4">
                  Your browser does not support the video tag.
@@ -223,7 +223,7 @@
         <audio id="2.6">
           <source src="/sounds/MCOG-2/2.6.mp3">
         </audio> 
-        <div id="showQ8" class="toggleButton" style="display: block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); waitShowInline('check8', 15000); ">Show Definition</div>
+        <div id="showQ8" class="toggleButton" style="display: block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); waitShowInline('check8', 12000); ">Show Definition</div>
         <div id="perched" class="dictionary" style="width: 35vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Perch (verb, present tense) or Perched (past tense)</b> <br>To rest on the edge of something or high up.
           <span id="check8" class="success-checkmark" style="display: none" onclick="showNext(); hide('perched'); unhighlight('perched_word')"></span>
@@ -246,10 +246,10 @@
         <audio id="2.7">
           <source src="/sounds/MCOG-2/2.7.mp3">
         </audio> 
-        <div id="showQ9" class="toggleButton" style="display: block;" onclick="play('2.7'); show('eight'); hide('showQ9'); show('hideQ9')">Show Question</div>
+        <div id="showQ9" class="toggleButton" style="display: block;" onclick="play('2.7'); show('eight'); hide('showQ9'); show('hideQ9'); waitShowInline('check9', 3000);">Show Question</div>
         <div id="eight" style="display: none; width: 20vw;" class="speechQ sb2">
           Do you remember how Ngede gets his revenge?
-          <span class="success-checkmark" onclick="showNext(); hide('eight')"></span>
+          <span id="check9" style="display: none" class="success-checkmark" onclick="showNext(); hide('eight')"></span>
         </div>
         <div class="words">But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird. Ngede called out angrily, “VIC-torr! VIC-torrr!” Gingile stopped, 
           stared at the little bird and laughed aloud. “You want some honey, do you, my friend? Ha! But I did all the work, and got all the stings. Why should I share any of this lovely 
@@ -328,7 +328,7 @@
         </audio> 
         <div id="hideQ12" class="toggleButton" style="display: none;" onclick="hide('lesson'); hide('hideQ12'); show('reshowQ12')">Hide Question</div>
         <div id="reshowQ12" class="toggleButton" style="display: none;" onclick="show('lesson'); hide('reshowQ12'); show('hideQ12')">Show Question</div>
-        <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide(showQ12); show('hideQ12')">Show Question</div>
+        <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide('showQ12'); show('hideQ12')">Show Question</div>
         <div id="lesson" class="multiple" style="margin-left: 45vw; margin-top: 20vw; height: 20vw; display: none;">
           What lesson did Gingele learn?<br>
           <br><span class="choice" onclick="success(); showNext(); hide('lesson'); hide('hideQ12');">(a) Gingele learned that he should share honey with the honeyguide.</span>
@@ -354,7 +354,7 @@
         <div id="showQ13" class="toggleButton" style="display: block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('showQ13'); waitShowInline('check13', 10000)">Show Definition</div>
         <div id="harvest" class="dictionary" style="width: 30vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Harvest (verb)</b> <br>To gather a crop or natural product for use, usually for eating.
-          <span id="check13" class="success-checkmark" style="display: none" onclick="showNext(); hide('harvest'); hide('hideQ13');"></span>
+          <span id="check13" class="success-checkmark" style="display: none" onclick="showNext(); hide('harvest'); hide('hideQ13'); unighlight('harvest_word');"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
