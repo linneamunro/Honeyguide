@@ -203,7 +203,7 @@ function pauseVid(video){
   
 }
 function enableClick(id){
-  document.getElementById('id').style.pointerEvents = 'none';
+  document.getElementById('id').style.pointerEvents = 'auto';
 }
 
 function waitEnable(id, time){
