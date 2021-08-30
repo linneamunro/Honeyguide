@@ -212,7 +212,7 @@ function waitEnable(id, time){
 }
 
 function enableInput(id){
-  document.getElementById(id).disabled = false;
+  document.getElementById(id).enabled=true;
 }
   
 function waitInput(id, time){
