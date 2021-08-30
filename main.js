@@ -207,5 +207,6 @@ function enableClick(id){
 }
 
 function waitEnable(id, time){
+  document.getElementById(id).style.pointerEvents = 'none';
   setTimeout(enableClick, time, id);
 }
