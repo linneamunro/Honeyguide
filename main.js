@@ -210,3 +210,12 @@ function waitEnable(id, time){
   document.getElementById(id).style.pointerEvents = 'none';
   setTimeout(enableClick, time, id);
 }
+
+function enableInput(id){
+  document.getElementById(id).disabled = true;
+}
+  
+function waitInput(id, time){
+  document.getElementById(id).disabled = true;
+  setTimeout(enableInput, time, id);
+}
