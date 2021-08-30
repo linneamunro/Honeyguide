@@ -328,12 +328,12 @@
         </audio> 
         <div id="hideQ12" class="toggleButton" style="display: none;" onclick="hide('lesson'); hide('hideQ12'); show('reshowQ12')">Hide Question</div>
         <div id="reshowQ12" class="toggleButton" style="display: none;" onclick="show('lesson'); hide('reshowQ12'); show('hideQ12')">Show Question</div>
-        <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide('showQ12'); show('hideQ12')">Show Question</div>
+        <div id="showQ12" class="toggleButton" style="display: block;" onclick="play('2.10'); show('lesson'); hide('showQ12'); show('hideQ12'): waitEnable('choice4', 22000); waitEnable('choice5', 22000); waitEnable('choice5', 22000);">Show Question</div>
         <div id="lesson" class="multiple" style="margin-left: 45vw; margin-top: 20vw; height: 20vw; display: none;">
           What lesson did Gingele learn?<br>
-          <br><span class="choice" onclick="success(); showNext(); hide('lesson'); hide('hideQ12');">(a) Gingele learned that he should share honey with the honeyguide.</span>
-          <br><span class="choice" onclick="failure();">(b) Gingele learned to stay out of the umbrella thorn tree.</span>
-          <br><span class="choice" onclick="failure()">(c) Gingele learned to not trust Ngede.</span>
+          <br><span id="choice5" class="choice" onclick="failure();">(a) Gingele learned to stay out of the umbrella thorn tree.</span>
+          <br><span id="choice4" class="choice" onclick="success(); showNext(); hide('lesson'); hide('hideQ12');">(b) Gingele learned that he should share honey with the honeyguide.</span>
+          <br><span id="choice6" class="choice" onclick="failure()">(c) Gingele learned to not trust Ngede.</span>
         </div>
         <div class="words">Before Leopard could take a swipe at Gingile, he rushed down the tree. In his hurry he missed a branch, and landed with a heavy thud on the ground twisting his 
           ankle. He hobbled off as fast as he could. Luckily for him, Leopard was still too sleepy to chase him. Ngede, the Honeyguide, had his revenge. And Gingile learned his
