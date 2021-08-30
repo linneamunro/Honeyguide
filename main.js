@@ -198,3 +198,7 @@ function waitShow(item, time){
 function waitShowInline(item, time){
   setTimeout(showInline, time, item);
 }
+function pauseVid(video){
+  var vid = document.getElementById("video"); 
+  vid.pause();
+}
