@@ -199,7 +199,7 @@ function waitShowInline(item, time){
   setTimeout(showInline, time, item);
 }
 function pauseVid(video){
-  document.getElementById("video").pause; 
+  document.getElementById(video).pause; 
   
 }
 function enableClick(id){
