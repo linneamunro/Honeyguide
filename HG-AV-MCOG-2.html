@@ -270,7 +270,7 @@
        <div id="hideQ10" class="toggleButton" style="display: none;" onclick="hide('delicious'); hide('hideQ10'); show('reshowQ10')">Hide Question</div>
         <div id="reshowQ10" class="toggleButton" style="display: none;" onclick="show('delicious'); hide('reshowQ10'); show('hideQ10')">Show Question</div>
         <div id="showQ10" class="toggleButton" style="display: block;" onclick="waitInput('submit1', 3000); play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word'); show('hideQ10');">Show Question</div>
-        <form onsubmit="success(); showNext(); hide('delicious'); hide('hideQ10');return false;">
+        <form onsubmit="success(); showNext(); hide('delicious'); hide('hideQ10'); unhighlight('delicious_word'); return false;">
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
@@ -297,7 +297,7 @@
         </audio> 
         <div id="hideQ11" class="toggleButton" style="display: none;" onclick="hide('sharp'); hide('hideQ11'); show('reshowQ11')">Hide Question</div>
         <div id="reshowQ11" class="toggleButton" style="display: none;" onclick="show('sharp'); hide('reshowQ11'); show('hideQ11')">Show Question</div>
-        <div id="showQ11" class="toggleButton" style="display: block;" onclick="play('2.9'); show('sharp'); hide('showQ11'); show('hideQ11');">Show Question</div>
+        <div id="showQ11" class="toggleButton" style="display: block;" onclick="play('2.9'); show('sharp'); hide('showQ11'); show('hideQ11'); waitInput('submit2', 3000);">Show Question</div>
         <form onsubmit="success(); showNext(); hide('sharp'); return false; hide('hideQ11');">
         <div id="sharp" class="multiple" style="margin-left: 45vw; height: 15vw; margin-top: 15vw; display: none;">
           Look at the picture. The leopard looks very surprised and angry.  The leopard revealed sharp
@@ -307,7 +307,7 @@
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
           background-color:  whitesmoke; text-align: center; outline: none;" required placeholder="Enter Answer">
           .
-          <input type="submit" style="background-color: greenyellow; font-size:1.5vw;" value="Continue"></span>
+          <input id="submit2" type="submit" style="background-color: greenyellow; font-size:1.5vw;" value="Continue"></span>
         </div>
           </form>
         <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another branch.
