@@ -202,3 +202,10 @@ function pauseVid(video){
   document.getElementById("video").pause; 
   
 }
+function enableClick(id){
+  document.getElementById('id').style.pointerEvents = 'none';
+}
+
+function waitEnable(id){
+  setTimeout(enableClick, time, id);
+}
