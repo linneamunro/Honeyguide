@@ -269,14 +269,14 @@
         </audio> 
        <div id="hideQ10" class="toggleButton" style="display: none;" onclick="hide('delicious'); hide('hideQ10'); show('reshowQ10')">Hide Question</div>
         <div id="reshowQ10" class="toggleButton" style="display: none;" onclick="show('delicious'); hide('reshowQ10'); show('hideQ10')">Show Question</div>
-        <div id="showQ10" class="toggleButton" style="display: block;" onclick="play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word'); show('hideQ10');">Show Question</div>
+        <div id="showQ10" class="toggleButton" style="display: block;" onclick="waitInput('submit1', 3000); play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word'); show('hideQ10');">Show Question</div>
         <form onsubmit="success(); showNext(); hide('delicious'); hide('hideQ10');return false;">
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
           background-color:  whitesmoke; text-align: center; outline: none; "required placeholder="Enter Answer">
           honey.
-          <input type="submit" style="background-color: greenyellow; font-size:1.5vw;" value="Continue"></span>
+          <input id="submit1" type="submit" style="background-color: greenyellow; font-size:1.5vw;" value="Continue"></span>
         </div>
         </form>
         <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the <span id="delicious_word">delicious</span> honey, and eagerly followed the bird once again. 
