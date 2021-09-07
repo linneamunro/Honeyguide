@@ -219,3 +219,11 @@ function waitInput(id, time){
   document.getElementById(id).disabled = true;
   setTimeout(enableInput, time, id);
 }
+function showVideo(){
+  show('smokeVid'); 
+  waitShowNext(20000); 
+  hide('beginbox'); 
+  hide('intro'); 
+  hide('coverPic'); 
+  hide('avatar');
+}
