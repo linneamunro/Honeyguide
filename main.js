@@ -226,5 +226,5 @@ function showVideo(){
   hide('intro'); 
   hide('coverPic'); 
   hide('avatar');
-  play('smokeVid');
+  document.getElementById('smokeVid').play;
 }
