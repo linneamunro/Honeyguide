@@ -221,7 +221,7 @@ function waitInput(id, time){
 }
 function showVideo(){
   show('smokeVid'); 
-  waitShowNext(20000); 
+  waitShowNext(23000); 
   hide('beginbox'); 
   hide('intro'); 
   hide('coverPic'); 
