@@ -226,4 +226,5 @@ function showVideo(){
   hide('intro'); 
   hide('coverPic'); 
   hide('avatar');
+  play('smokeVid');
 }
