@@ -220,7 +220,7 @@ function waitInput(id, time){
   setTimeout(enableInput, time, id);
 }
 function showVideo(){
-  show('introVid'); 
+  show('smokeVid'); 
   waitShowNext(23000); 
   hide('beginbox'); 
   hide('intro'); 
