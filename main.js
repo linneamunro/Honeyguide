@@ -70,6 +70,12 @@ function begin(){
   hide("name");
 }
 
+function begin2(){
+  document.getElementById("intro").style.display = "block";
+  document.getElementById("n2").style.display = "block";
+  hide("name");
+}
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
