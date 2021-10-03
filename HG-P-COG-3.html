@@ -14,7 +14,8 @@
     <div class="mySlides fade" style="display: block;">
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>  
-        <img class="pic" src="/images/Cover.jpg">
+        <img id="coverphoto" class="pic" src="/images/Cover.jpg">
+        <img id="storyarc" class="pic" style="display: none;" src="/images/Storyarc.png">
         <audio id="2.A">
           <source src="/sounds/2.A.mp3">
         </audio> 
@@ -29,7 +30,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro();">Press to Begin</button>
+           <button id='begin' style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="showintro(); hide('coverphoto'); show('storyarc')">Press to Begin</button>
         </div>
 
         <div id="intro" style="width: 35vw; display: none; text-align:left;" class="speechsmall">
@@ -43,7 +44,7 @@
           <span class="success-checkmark" onclick="plusSlides2(1);"></span>
           
         </div>
-        <img src="/images/Storyarc.png">
+       
         </div>
     </div>
 
