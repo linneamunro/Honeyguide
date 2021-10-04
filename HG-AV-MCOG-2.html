@@ -2,8 +2,8 @@
 <html>
     <head>
         <script type="javascript">
-        function pauseSmoke() {
-            document.getElementById("smokeVid").pause();
+        function playSmoke() {
+            document.getElementById("smokeVid").play();
           
         }
         </script>
@@ -38,7 +38,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;" required>
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('2.T'); show('intro'); setTimeout(showVideo, 37);">Press to Begin</button>
+           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('2.T'); show('intro'); setTimeout(showVideo, 37000);">Press to Begin</button>
         </div>
         <div id="intro" style="width: 35vw; display: none;" class="speech sb1">
           In this story "The Honeyguide's Revenge," Gingile gets honeycomb out of a hive. He uses a smoking stick to calm the bees first.
@@ -46,9 +46,6 @@
           Smoke also makes them think there is a forest fire so they eat a lot of honey before leaving their hive to look for a new home. 
           It is hard for them to sting when they are full of honey. Here is a video of bee keepers using smoke to calm the bees.
         </div>
-          <div id=smokeVidBox style="display:none; text-align:center; font-size: 25px; background-color:white" >
-              Press  ▶ to start video and pause the video before moving on
-          </div>
             <video id="smokeVid" width="900" style="display:none; position: fixed; margin-top: 3vw; margin-left: 19.5vw; background-color:white" controls>
                  <source src="SmokeBee.mp4" type="video/mp4">
                  Your browser does not support the video tag.
