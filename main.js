@@ -234,5 +234,5 @@ function showVideo(){
   hide('coverPic'); 
   hide('avatar');
   var myVid = document.getElementById('smokeVid');
-  myVid.play;
+  myVid.play();
 }
