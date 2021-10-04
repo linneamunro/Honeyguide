@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="javascript">
+        function pauseSmoke() {
+            document.getElementById("smokeVid").pause();
+          
+        }
+        </script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
@@ -40,7 +46,7 @@
           Smoke also makes them think there is a forest fire so they eat a lot of honey before leaving their hive to look for a new home. 
           It is hard for them to sting when they are full of honey. Here is a video of bee keepers using smoke to calm the bees.
         </div>
-          <div>
+          <div id=smokeVidBox>
               Press  ▶ to start video and pause the video before moving on
           </div>
             <video id="smokeVid" width="900" style="display: none; position: fixed; margin-top: 3vw; margin-left: 19.5vw;" controls>
@@ -378,7 +384,7 @@
 
   
     <!-- Next and previous buttons -->
-    <a class="next" id="n" onclick="plusSlides(1); pauseVid('smokeVid');">&#10095;</a>
+    <a class="next" id="n" onclick="plusSlides(1); pauseSmoke()">&#10095;</a>
   </div>
   
   <!-- The dots/circles -->
