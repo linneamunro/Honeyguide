@@ -56,8 +56,8 @@
         </audio>
         <div class="words">Today you will read the story of The Honey Guide. This is the story of Ngede, the Honeyguide, and a greedy young man named Gingile.
         </div>
-        <div id="showQ1" class="toggleButton" style="display: block;" onclick="show('firstq1'); hide('firstCheck1'); hide('showQ1');">Show Question</div>
-        <div id="firstq1" style="display: none; width: 18vw; margin-bottom:100px" class="speechQ sb2">Look at the picture. Who is Ngede? Click him on the picture</div>
+        <div id="showQ1" class="toggleButton" style="display: block;" onclick="show('firstq1'); hide('showQ1');">Show Question</div>
+        <div id="firstq1" style="display: none; width: 18vw; margin-bottom:200px" class="speechQ sb2">Look at the picture. Who is Ngede? Click him on the picture</div>
         <div id="firstq2" style="display: none;" class="speechQ sb2">Look at the picture. Who is Gingile? Click him on the picture</div>
         <div id="firstSuccess" style="display: none;" class="speechQ sb2">Terrific! Go to the next page</div>
         <audio src="/sounds/success.wav"></audio>
@@ -80,15 +80,15 @@
         <audio id="1.1s">
           <source src="/sounds/MCOG-1/1.1s.mp3">
         </audio>
-        <div id="secondq1" style="display: none;" class="speech sb1">Click the highlighted text</div>
-        <div id="rattled" class="dictionary" style="margin-top: 5vw; margin-left: 62vw; display: none;">
+         <div id="showDef" class="toggleButton" style="display: block;" onclick="show('rattled'); hide('showDef'); show('check2')>Show Definition</div>
+
+        <div id="rattled" class="dictionary" style="margin-top: -2vw; margin-left: 62vw; display: none;">
           <b style="background-color: lightgray;">Rattled (verb, past tense).</b> <br>1. Made a rapid sequence of short sharp noises. <br>2. Chattered on-and-on.
-          <span id="secondCheck2" class="success-checkmark2" onclick="showNext(); hide('rattled');"></span>
+          <span id="check2" class="success-checkmark2" onclick="showNext(); hide('rattled');"></span>
         </div>
         <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, 
-          searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird <span id="rattled_word"> rattled</span>, as he flew to the next tree, and the next. 
+          searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird <span id="rattled_word" style="background-color: yellow"> rattled</span>, as he flew to the next tree, and the next. 
           “Chitik, chitik, chitik,” he called, stopping from time to time to be sure that Gingile followed.
-          <span id="secondCheck1" class="success-checkmark2" onclick="highlight('rattled_word'); show('rattled');  hide('secondCheck1');"></span>
         </div>
         <div style="width: 5%; height: 5vw; background-color: transparent; margin-left: 36%; margin-top: 10vh; cursor: pointer; position: absolute;"></div>
       </div>
@@ -103,7 +103,8 @@
         <audio id="1.2">
           <source src="/sounds/1.2.mp3">
         </audio>
-        <div id="thirdq1" class="multiple arrow" style="display: none;">
+        <div id="showQ4" class="toggleButton" style="display: block;" onclick="show('Q4'); hide('showQ4');">Show Question</div>
+        <div id="Q4" class="multiple arrow" style="display: none;">
           Which one of these fruits is a fig? Click the correct fruit. <br><br>
           <img class="multImg" onclick="failure()" src="images/Orange.PNG">
           <img class="multImg" onclick="success(); showNext(); hide('thirdq1'); stop('1.2')" src="images/Fig.PNG">
@@ -111,7 +112,6 @@
         </div>
         <div class="words">After half an hour, they reached a huge wild <span id="fig_word">fig</span> tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at 
           Gingile as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he trusted Ngede.
-          <span id="thirdCheck1" class="success-checkmark2" onclick="highlight('fig_word'); show('thirdq1');  hide('thirdCheck1');"></span>
         </div>
       </div>
     </div>
