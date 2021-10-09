@@ -101,7 +101,7 @@
         <div id="Q4" class="multiple arrow" style="display: none;">
           Which one of these fruits is a fig? Click the correct fruit. <br><br>
           <img class="multImg" onclick="failure()" src="images/Orange.PNG">
-          <img class="multImg" onclick="success(); showNext(); hide('thirdq1'); stop('1.2')" src="images/Fig.PNG">
+          <img class="multImg" onclick="success(); showNext(); hide('thirdq1'); stop('1.2'); hide('Q4');" src="images/Fig.PNG">
           <img class="multImg" onclick="failure()" src="images/Kiwi.PNG">
         </div>
         <div class="words">After half an hour, they reached a huge wild <span id="fig_word">fig</span> tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at 
@@ -119,12 +119,12 @@
         <audio id="1.3">
           <source src="/sounds/1.3.mp3">
         </audio>
-        <div id="fourth" style="display: none; width: 20vw;" class="speech sb1">I wonder why Gingele needs a smoking stick?
-          <span id="fourthCheck2" class="success-checkmark" onclick=" showNext();  hide('fourth'); stop('1.3')"></span>
+        <div id="showQ5" class="toggleButton" style="display: block;" onclick="show('Q5'); hide('showQ5');">Show Question</div>
+        <div id="Q5" style="display: none; width: 20vw;" class="speech sb1">I wonder why Gingele needs a smoking stick?
+          <span id="Check5" class="success-checkmark" onclick=" showNext();  hide('Q5'); stop('1.3')"></span>
         </div>
         <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick
            into the heart of the fire. This wood was especially known to make lots of smoke while it burned. He began climbing, holding the cool end of the <span id="smoking_word">smoking stick</span> in his teeth.
-           <span id="fourthCheck1" class="success-checkmark" onclick="highlight('smoking_word'); show('fourth');  hide('fourthCheck1');"></span>
           </div>
       </div>
     </div>
