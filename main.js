@@ -109,6 +109,22 @@ function clickNgede(){
   }
 }
 
+function clickNgede2(){
+  var success = new Audio("/sounds/success.wav");
+  var failure = new Audio("/sounds/failure.wav");
+  if(document.getElementById("firstq1").style.width == "18vw" ){
+    success.play();
+    stop("1.1A");
+    document.getElementById("firstq1").style.width = "17vw";
+    document.getElementById("firstq2").style.display = "block";
+    document.getElementById("firstq1").style.display = "none";
+    document.getElementById("firstAvatar").onclick = function(){ toggle("firstq2") };
+  }
+  else{
+    failure.play();
+  }
+}
+
 function clickG(){
   var success = new Audio("/sounds/success.wav");
   var failure = new Audio("/sounds/failure.wav");
