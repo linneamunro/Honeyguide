@@ -224,6 +224,7 @@
 
 .success-checkmark:after {
   content: '>';
+  font-weight: bold;
   cursor: pointer;
   position: absolute;
   width: 2vw; 
@@ -237,6 +238,7 @@
 
 .success-checkmark2:after {
   content: '>';
+  font-weight: bold;
   cursor: pointer;
   position: absolute;
   width: 2.5vw; 
