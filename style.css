@@ -252,7 +252,7 @@
 
 .toggleButton{
   text-align: center;
-  position: static;
+  position: absolute;
   height: auto;
   font-weight: bold;
   transform: translate(60vw, 1vw);
