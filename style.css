@@ -223,7 +223,7 @@
 }
 
 .success-checkmark:after {
-  content: '>';
+  content: '›';
   font-weight: bold;
   cursor: pointer;
   position: absolute;
@@ -237,7 +237,7 @@
 }
 
 .success-checkmark2:after {
-  content: '>';
+  content: '›';
   font-weight: bold;
   cursor: pointer;
   position: absolute;
