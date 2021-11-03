@@ -227,8 +227,8 @@
   font-weight: bold;
   cursor: pointer;
   position: absolute;
-  width: 2.5vw; 
-  height: 2.5vw;
+  width: 2vw; 
+  height: 2vw;
   text-align:center;
   border: 1px solid #aaa;
   font-size: 20px;
