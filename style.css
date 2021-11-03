@@ -230,6 +230,7 @@
   width: 2vw; 
   height: 2vw;
   text-align:center;
+  line-height:1px;
   border: 1px solid #aaa;
   background: greenyellow;
   border-radius: 50%;
