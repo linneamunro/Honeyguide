@@ -226,7 +226,7 @@
   content: '›';
   font-weight: bold;
   cursor: pointer;
-  position: absolute;
+  position: static;
   display:inline-block;
   width: 2vw; 
   height: 2vw;
