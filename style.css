@@ -234,6 +234,7 @@
   font-size: 40px;
   background: greenyellow;
   border-radius: 50%;
+  margin-top: -10px;
   box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
   margin-left:5px;
 }
