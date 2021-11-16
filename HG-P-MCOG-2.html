@@ -267,13 +267,15 @@
           <source src="/sounds/MCOG-2/2.8.mp3">
         </audio> 
 
+       <form onsubmit="success(); showNext(); hide('delicious'); hide('hideQ10'); unhighlight('delicious_word'); return false;">
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
-          background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer">
+          background-color:  whitesmoke; text-align: center; outline: none; "required placeholder="Enter Answer">
           honey.
-          <span class="success-checkmark2" onclick="success(); showNext(); hide('delicious');"></span>
+          <input id="submit1" type="submit" style="background-color: greenyellow; font-size:1.5vw;" value="Continue"></span>
         </div>
+        </form>
         <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the <span id="delicious_word" style="background-color: yellow">delicious</span> honey, and eagerly followed the bird once again. 
           After leading Gingile along the edge of the forest, Ngede stopped to rest in a great umbrella thorn. “Ahh,” thought Gingile. “The hive must be in this tree.”
           He quickly made his small fire and began to climb, the smoking branch in his teeth. Ngede sat and watched.
@@ -292,16 +294,18 @@
           <source src="/sounds/MCOG-2/2.9.mp3">
         </audio> 
         
-        <div id="sharp" class="multiple" style="margin-left: 7vw; height: 14vw; margin-top: 20vw; display: none;">
+       <form onsubmit="success(); showNext(); hide('sharp'); return false; hide('hideQ11');">
+        <div id="sharp" class="multiple" style="margin-left: 45vw; height: 15vw; margin-top: 20vw; display: none;">
           Look at the picture. The leopard looks very surprised and angry.  The leopard revealed sharp
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
-          background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer">
+          background-color:  whitesmoke; text-align: center; outline: none;" required placeholder="Enter Answer">
           and sharp
           <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
-          background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer">
+          background-color:  whitesmoke; text-align: center; outline: none;" required placeholder="Enter Answer">
           .
-          <span class="success-checkmark2" onclick="success(); showNext(); hide('sharp'); hide('hideEleventh')"></span>
+          <input id="submit2" type="submit" style="background-color: greenyellow; font-size:1.5vw;" value="Continue"></span>
         </div>
+        </form>
         <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another branch.
           But instead of the hive, he was staring into the face of a leopard! Leopard was very angry at having her sleep so rudely interrupted. She narrowed her eyes, opened her 
           mouth to reveal her very large and very <span id="sharp_word">sharp</span> teeth.
