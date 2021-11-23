@@ -45,6 +45,7 @@
           How does the smoking stick work? When there is smoke the bees cannot detect alarm signals that would normally cause them to attack an intruder. 
           Smoke also makes them think there is a forest fire so they eat a lot of honey before leaving their hive to look for a new home. 
           It is hard for them to sting when they are full of honey. Here is a video of bee keepers using smoke to calm the bees.
+        
         </div>
             <video id="smokeVid" width="900" style="display:none; position: fixed; margin-top: 3vw; margin-left: 19.5vw; background-color:white">
                  <source src="SmokeBee.mp4" type="video/mp4">
@@ -67,7 +68,6 @@
         </audio>
         <img id="firstAvatar" class="avatar" src="/images/Avatar.png">
         <i id="click2" class="fa fa-arrow-right" style="display: none;"></i>
-        <div id="showPronunciation" class="toggleButton" style="display: block;" onclick="highlight('Ngede_word'); show('NgedeDef'); play('2.A'); highlightNgede(); hide('showPronunciation');">Show Pronunciation</div>
         <div id="NgedeDef" class="dictionary">
           <span id="ŋ" style= "background-color:lightgrey;">N [ŋ]</span>
           <span id="ɡe" style= "background-color:lightgrey;"> ge [ɡe]</span>
@@ -89,6 +89,7 @@
         <div class="words">Today you will read the story of The Honey Guide. This is the story of 
           <span id="Ngede_word" style="background-color: yellow;">Ngede</span>, the Honeyguide, and a greedy
            young man named <span id="Gingile_word" style="background-color: yellow;">Gingile</span>.
+           <span id="Q1" class="success-checkmark" style="display: inline-block;" onclick="highlight('Ngede_word'); show('NgedeDef'); play('2.A'); highlightNgede(); hide('Q1');"></span>
         </div>
         <audio src="/sounds/success.wav"></audio>
         <audio src="/sounds/failure.wav"></audio>
@@ -107,9 +108,7 @@
         </audio> 
         <img class="pic" src="/images/s1.jpg">
         <img class="avatar"  src="/images/Avatar.png">
-        <div id="hideThird" class="toggleButton" style="display: none;" onclick="hide('chitik'); hide('hideThird'); show('reshowThird') ">Hide Question</div>
-        <div id="reshowThird" class="toggleButton" style="display: none;" onclick="show('chitik'); hide('reshowThird'); show('hideThird');">Show Question</div>
-        <div id="showThird" class="toggleButton" style="display: block;" onclick="play('2.1'); show('chitik'); hide('showThird'); highlight('chitik_word'); show('hideThird'); waitEnable('choice1', 25000); waitEnable('choice2', 25000); waitEnable('choice3', 25000);">Show Question</div>
+
         <div id="chitik" class="multiple arrow2" style="margin-left: 14vw; margin-top: 1vw; height: 25vw; display: none;">
           Why does Gingele's mouth water when he hears the little bird's call "chitik-chitik-chitik"?<br>
           <br><span id="choice1" class="choice" onclick="success(); showNext(); hide('chitik'); hide('hideThird'); unhighlight('chitik_word')">(a) He knew the bird would lead him to honey</span>
@@ -119,6 +118,7 @@
         <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, 
           searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird rattled, as he flew to the next tree, and the next. 
           <span id="chitik_word">“Chitik, chitik, chitik,”</span> he called, stopping from time to time to be sure that Gingile followed.
+       <span id="Q2" class="success-checkmark" style="display: inline-block;" onclick="play('2.1'); show('chitik'); hide('Q2'); highlight('chitik_word'); waitEnable('choice1', 25000); waitEnable('choice2', 25000); waitEnable('choice3', 25000);"></span>
         </div>
       </div>
     </div>
