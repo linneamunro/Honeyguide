@@ -132,16 +132,16 @@
         </audio> 
         <img class="pic" src="/images/s2.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showDef" class="toggleButton" style="display: block;" onclick="play('2.2'); show('trusted'); hide('showDef'); highlight('trusted_word'); waitShowInline('check4', 9000);">Show Definition</div>
         <div id="trusted" class="dictionary" style="margin-top: -2vw; width: 30vw;">  
           <b style="background-color: lightgray;">Trusted (verb)</b> <br>Feels sure that the other character will give truthful or accurate information.
           <div class="bubble3"></div>
           <div class="bubble4"></div>
-        <span id="check4" style="display: none;" class="success-checkmark" onclick="showNext(); hide('trusted'); unhighlight('trusted_word')"></span>
+        <span id="check4" style="display: none;" class="success-checkmark2" onclick="showNext(); hide('trusted'); unhighlight('trusted_word')"></span>
         </div>
         <div class="words">After half an hour, they reached a huge wild fig tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at Gingile 
           as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he 
           <span id="trusted_word" style="background-color: yellow;">trusted</span> Ngede.
+        <span id="Q3" class="success-checkmark" style="display: inline-block;" onclick="play('2.2'); show('trusted'); hide('Q3'); highlight('trusted_word'); waitShowInline('check4', 9000);"></span>
         </div>
       </div>
     </div>
@@ -155,13 +155,13 @@
         </audio> 
         <img class="pic" src="/images/s3.jpg">
         <img class="avatar" src="/images/Avatar.png">
-        <div id="showQ" class="toggleButton" style="display: block;" onclick="play('2.3'); show('fourth'); hide('showQ'); waitShowInline('check5', 5000); ">Show Question</div>
         <div id="fourth" style="display: none; top: 50px;" class="speechQ sb2">Do you remember why Gingile needs a smoking stick?
-          <span id="check5" class="success-checkmark" style="display: none" onclick="showNext(); hide('fourth')"></span>
+          <span id="check5" class="success-checkmark2" style="display: none" onclick="showNext(); hide('fourth')"></span>
         </div>
         <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick
            into the heart of the fire. This wood was especially known to make lots of smoke while it burned. He began climbing, holding the cool end of the 
            <span id="stick_word">smoking stick</span> in his teeth.
+        <span id="Q4" class="success-checkmark" style="display: inline-block;" onclick="play('2.3'); show('fourth'); hide('Q4'); waitShowInline('check5', 5000);"></span>
           </div>
       </div>
     </div>
@@ -178,9 +178,8 @@
           <source src="/sounds/MCOG-2/2.4.B.mp3">
         </audio> 
         <img class="avatar" src="/images/Avatar.png">
-        <div id="hideQ6" class="toggleButton" style="display: none;" onclick="hide('hive'); hide('hideQ6'); show('reshowQ6')">Hide Question</div>
-        <div id="reshowQ6" class="toggleButton" style="display: none;" onclick="show('hive'); hide('reshowQ6'); show('hideQ6')">Show Question</div>
-        <div id="showQ6" class="toggleButton" style="display: block;" onclick="play('2.4.A'); show('hive'); hide('showQ6'); show('hideQ6'); waitEnable('img1', 3000); waitEnable('img2', 3000); waitEnable('img3', 3000); waitEnable('img4', 3000);">Show Question</div>
+ 
+
         <div id="hive" class="multiple" style="display: none; height: 22vw; width: auto; margin-left: 40vw; margin-top: 15vw;">
           Where did Gingile find the bees? <br> <span style="font-size: 1.5vw; background-color: whitesmoke;">(Click the correct picture)</span> <br><br>
           <img id="img1" class="multImg" onclick="failure()" src="images/q1.PNG">
@@ -192,6 +191,7 @@
           <span id="hive_word">hive</span>. 
           When Gingile reached the hive he pushed the smoking end of the stick into the hollow. The bees came rushing out, angry and mean. They flew away because they didn’t 
           like the smoke – but not before they had given Gingile some painful stings!
+       <span id="Q5" class="success-checkmark" style="display: inline-block;" onclick="play('2.4.A'); hide('Q5'); show('hideQ6'); waitEnable('img1', 3000); waitEnable('img2', 3000); waitEnable('img3', 3000); waitEnable('img4', 3000);"></span   
         </div>
       </div>
     </div>
@@ -204,17 +204,18 @@
         <audio id="2.5">
           <source src="/sounds/MCOG-2/2.5.mp3">
         </audio>
-        <div id="showQ7" class="toggleButton" style="display: block;" onclick="play('2.5'); show('grubs'); hide('showQ7'); highlight('grub_word'); waitShowInline('check7', 20000)">Show Definition</div>
+
         <img class="avatar" src="/images/Avatar.png">
         <div id="grubs" class="dictionary" style="margin-top: -6vw; width: 42vw;">
           <b style="background-color: lightgray;"> Grub (noun)</b> <br>Soft, worm-like larva of an insect. The larva is the first form that hatches from the egg. It undergoes several transformations before becoming the adult form of the insect.
-          <span id="check7" class="success-checkmark" style="display:none;" onclick="showNext(); hide('grubs')"></span>
+          <span id="check7" class="success-checkmark2" style="display:none;" onclick="showNext(); hide('grubs')"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
         <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, 
           white <span id="grub_word" style="background-color: yellow;">grubs</span>. 
           He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the tree.
+        <span id="Q6" class="success-checkmark" style="display: inline-block;" onclick="play('2.5'); show('grubs'); hide('Q6'); highlight('grub_word'); waitShowInline('check7', 20000)"></span  
         </div>
       </div>
     </div>
@@ -228,16 +229,16 @@
         <audio id="2.6">
           <source src="/sounds/MCOG-2/2.6.mp3">
         </audio> 
-        <div id="showQ8" class="toggleButton" style="display: block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); waitShowInline('check8', 12000); ">Show Definition</div>
         <div id="perched" class="dictionary" style="width: 35vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Perch (verb, present tense) or Perched (past tense)</b> <br>To rest on the edge of something or high up.
-          <span id="check8" class="success-checkmark" style="display: none" onclick="showNext(); hide('perched'); unhighlight('perched_word')"></span>
+          <span id="check8" class="success-checkmark2" style="display: none" onclick="showNext(); hide('perched'); unhighlight('perched_word')"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
         <div class="words">Ngede eagerly watched everything that Gingile was doing. He was waiting for him to leave a fat piece of honeycomb as a thank-you offering to the Honeyguide. 
           Ngede flittered from branch to branch, closer and closer to the ground. Finally Gingile reached the bottom of the tree. 
           Ngede <span id="perched_word" style="background-color: yellow;">perched</span> on a rock near the boy and waited for his reward.
+        <span id="Q7" class="success-checkmark" style="display: inline-block;" onclick="play('2.6'); show('perched'); hide('showQ8'); highlight('perched_word'); waitShowInline('check8', 12000); "></span  
         </div>
       </div>
     </div>
@@ -251,14 +252,15 @@
         <audio id="2.7">
           <source src="/sounds/MCOG-2/2.7.mp3">
         </audio> 
-        <div id="showQ9" class="toggleButton" style="display: block;" onclick="play('2.7'); show('eight'); hide('showQ9'); waitShowInline('check9', 3000);">Show Question</div>
+        
         <div id="eight" style="display: none; width: 20vw;" class="speechQ sb2">
           Do you remember how Ngede gets his revenge?
-          <span id="check9" style="display: none" class="success-checkmark" onclick="showNext(); hide('eight')"></span>
+          <span id="check9" style="display: none" class="success-checkmark2" onclick="showNext(); hide('eight');"></span>
         </div>
         <div class="words">But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird. Ngede called out angrily, “VIC-torr! VIC-torrr!” Gingile stopped, 
           stared at the little bird and laughed aloud. “You want some honey, do you, my friend? Ha! But I did all the work, and got all the stings. Why should I share any of this lovely 
           honey with you?” Then he walked off. Ngede was furious! This was no way to treat him! But he would get his <span id="revenge_word">revenge</span>.
+        <span id="Q8" class="success-checkmark" style="display: inline-block;" onclick="play('2.7'); show('eight'); hide('showQ8'); waitShowInline('check9', 3000); "></span>  
         </div>
       </div>
     </div>
@@ -272,9 +274,6 @@
         <audio id="2.8">
           <source src="/sounds/MCOG-2/2.8.mp3">
         </audio> 
-       <div id="hideQ10" class="toggleButton" style="display: none;" onclick="hide('delicious'); hide('hideQ10'); show('reshowQ10')">Hide Question</div>
-        <div id="reshowQ10" class="toggleButton" style="display: none;" onclick="show('delicious'); hide('reshowQ10'); show('hideQ10')">Show Question</div>
-        <div id="showQ10" class="toggleButton" style="display: block;" onclick="waitInput('submit1', 15000); play('2.8'); show('delicious'); hide('showQ10'); highlight('delicious_word'); show('hideQ10');">Show Question</div>
         <form onsubmit="success(); showNext(); hide('delicious'); hide('hideQ10'); unhighlight('delicious_word'); return false;">
         <div id="delicious" class="multiple arrow" style="margin-left: 6vw; height: 12vw; margin-top: 11vw; display: none;">
           Gingele remembered the delicious honey. What is a synonym for delicious? Fill in the blank in this sentence: Gingele remembered the 
@@ -287,6 +286,7 @@
         <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the <span id="delicious_word">delicious</span> honey, and eagerly followed the bird once again. 
           After leading Gingile along the edge of the forest, Ngede stopped to rest in a great umbrella thorn. “Ahh,” thought Gingile. “The hive must be in this tree.”
           He quickly made his small fire and began to climb, the smoking branch in his teeth. Ngede sat and watched.
+          <span id="Q9" class="success-checkmark" style="display: inline-block;" onclick="waitInput('submit1', 15000); play('2.8'); show('delicious'); hide('Q9'); highlight('delicious_word');"></span>  
         </div>
       </div>
     </div>
@@ -300,9 +300,6 @@
         <audio id="2.9">
           <source src="/sounds/MCOG-2/2.9.mp3">
         </audio> 
-        <div id="hideQ11" class="toggleButton" style="display: none;" onclick="hide('sharp'); hide('hideQ11'); show('reshowQ11')">Hide Question</div>
-        <div id="reshowQ11" class="toggleButton" style="display: none;" onclick="show('sharp'); hide('reshowQ11'); show('hideQ11')">Show Question</div>
-        <div id="showQ11" class="toggleButton" style="display: block;" onclick="play('2.9'); show('sharp'); hide('showQ11'); show('hideQ11'); waitInput('submit2', 15000);">Show Question</div>
         <form onsubmit="success(); showNext(); hide('sharp'); return false; hide('hideQ11');">
         <div id="sharp" class="multiple" style="margin-left: 45vw; height: 15vw; margin-top: 15vw; display: none;">
           Look at the picture. The leopard looks very surprised and angry.  The leopard revealed sharp
@@ -318,6 +315,7 @@
         <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another branch.
           But instead of the hive, he was staring into the face of a leopard! Leopard was very angry at having her sleep so rudely interrupted. She narrowed her eyes, opened her 
           mouth to reveal her very large and very <span id="sharp_word">sharp</span> teeth.
+        <span id="Q10" class="success-checkmark" style="display: inline-block;" onclick="play('2.9'); show('sharp'); hide('Q10'); waitInput('submit2', 15000);"></span>  
         </div>
       </div>
     </div>
@@ -343,6 +341,7 @@
         <div class="words">Before Leopard could take a swipe at Gingile, he rushed down the tree. In his hurry he missed a branch, and landed with a heavy thud on the ground twisting his 
           ankle. He hobbled off as fast as he could. Luckily for him, Leopard was still too sleepy to chase him. Ngede, the Honeyguide, had his revenge. And Gingile learned his
           <span id="lesson_word">lesson</span>.
+        <span id="Q11" class="success-checkmark" style="display: inline-block;" onclick="play('2.10'); show('lesson'); hide('Q11'); waitEnable('choice4', 22000); waitEnable('choice5', 22000); waitEnable('choice6', 22000);"></span>
         </div>
       </div>
     </div>
@@ -356,16 +355,17 @@
         <audio id="2.11">
           <source src="/sounds/MCOG-2/2.11.mp3">
         </audio> 
-        <div id="showQ13" class="toggleButton" style="display: block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('showQ13'); waitShowInline('check13', 10000)">Show Definition</div>
+
         <div id="harvest" class="dictionary" style="width: 30vw; margin-top: -3vw;">
           <b style="background-color: lightgray;">Harvest (verb)</b> <br>To gather a crop or natural product for use, usually for eating.
-          <span id="check13" class="success-checkmark" style="display: none" onclick="showNext(); hide('harvest'); hide('hideQ13'); unighlight('harvest_word');"></span>
+          <span id="check13" class="success-checkmark2" style="display: none" onclick="showNext(); hide('harvest'); hide('hideQ13'); unighlight('harvest_word');"></span>
           <div class="bubble3"></div>
           <div class="bubble4"></div>
         </div>
         <div class="words">And so, when the children of Gingile hear the story of Ngede they have respect for the little bird. Whenever they 
           <span id="harvest_word" style="background-color: yellow;">harvest</span> honey, they make sure to leave the 
           biggest part of the comb for Honeyguide!
+        <span id="Q11" class="success-checkmark" style="display: inline-block;" onclick="play('2.11'); show('harvest'); highlight('harvest_word'); hide('Q12'); waitShowInline('check13', 10000)"></span>
         </div>
       </div>
     </div>
