@@ -170,6 +170,14 @@ function checkWord(){
     stop('1.5');
   }
 }
+function checkWord2(){
+  var value = document.getElementById('input1').value;
+  if(value != ""){
+    showNext();  
+    hide('comb'); 
+    
+  }
+}
 
 function count(){
   check += 1;
