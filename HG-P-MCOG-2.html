@@ -187,27 +187,30 @@
       </div>
     </div>
 
-    <!-- Seventh slide-->
-      <div class="mySlides fade">
+   <!-- Seventh slide-->
+    <div class="mySlides fade">
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s5.jpg">
+        <audio id="2.5">
+          <source src="/sounds/MCOG-2/2.5.mp3">
+        </audio> 
+     
         <img class="avatar" src="/images/Avatar.png">
-        <audio id="1.5">
-          <source src="/sounds/1.5.mp3"> 
-        </audio>
-
-        <div id="comb" class="multiple" style="margin-left: 16vw; height: 8vw; margin-top: 20vw; display: none;">
-          Gingile wanted the bee's honey so he took their <input id="input1" style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
-          background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer" >
-          <span id="sixthCheck2" class="success-checkmark2" onclick="checkWord2()"></span>
+        <div id="grubs" class="dictionary" style="margin-top: -6vw; width: 42vw;">
+          <b style="background-color: lightgray;"> Grub (noun)</b> <br>Soft, worm-like larva of an insect. The larva is the first form that hatches from the egg. It undergoes several transformations before becoming the adult form of the insect.
+          <span class="success-checkmark2" onclick="showNext(); hide('grubs')"></span>
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
         </div>
-        <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, white grubs. 
-          He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the <span id="tree_word">tree</span>.
-          <span id="showQ7" class="success-checkmark2" style="display: inline-block;" onclick="show('comb'); hide('showQ7');"></span>
+        <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, 
+          white <span id="grub_word" style="background-color: yellow">grubs</span>. 
+          He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the tree.
+          <div id="showQ7" class="success-checkmark" style="display: inline-block;" onclick="show('grubs'); hide('showQ7'); highlight('grub_word'); "></div>
         </div>
       </div>
     </div>
+
 
      <!-- Eight slide-->
      <div class="mySlides fade">
