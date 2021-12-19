@@ -191,6 +191,17 @@ function checkCount(num, id){
   }
 }
 
+
+function checkCount2(num, id){
+  if(check == num){
+    document.getElementById(id).style.display = "none";
+  
+    showNext();
+  }
+}
+
+
+
 function highlight(id){
   document.getElementById(id).style.backgroundColor = "yellow";
 }
