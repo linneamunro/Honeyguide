@@ -182,7 +182,7 @@ function checkWord2(){
 function checkWord3(){
   var value = document.getElementById('inputHive').value;
   var value2 = document.getElementById('inputLeapard').value;
-  if(value == "hive" && value == "leapard"){
+  if(value == "hive" && value2 == "leapard"){
     success();
     showNext();  
     hide('Q10'); 
