@@ -179,6 +179,20 @@ function checkWord2(){
   }
 }
 
+function checkWord3(){
+  var value = document.getElementById('inputHive').value;
+  var value2 = document.getElementById('inputLeapard').value;
+  if(value == "hive" && value == "leapard"){
+    success();
+    showNext();  
+    hide('Q10'); 
+   
+  }
+  else{
+    failure();
+  }
+}
+
 function count(){
   check += 1;
 }
