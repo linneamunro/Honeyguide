@@ -1,6 +1,7 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 var check = 0;
+var check2 =0;
 
 // Next/previous controls
 function plusSlides(n) {
@@ -194,11 +195,11 @@ function checkWord3(){
 }
 
 function count(){
-  check += 1;
+  check2 += 1;
 }
 
 function checkCount(num, id){
-  if(check == num){
+  if(check2 == num){
     document.getElementById(id).style.display = "none";
     stop('1.7');
     showNext();
@@ -207,7 +208,7 @@ function checkCount(num, id){
 
 
 function checkCount2(num, id){
-  if(check == num){
+  if(check2 == num){
     document.getElementById(id).style.display = "none";
   
     showNext();
