@@ -208,7 +208,7 @@ function checkCount(num, id){
 
 
 function checkCount2(num, id){
-  if(check2 == num){
+  if(check2 >= num){
     document.getElementById(id).style.display = "none";
   
     showNext();
