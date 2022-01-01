@@ -18,7 +18,7 @@
         <img id="coverPic" class="pic" src="/images/Cover.jpg">
         <img id="avatar" class="avatar"  src="/images/Avatar.png">
         <audio id="3.T">
-           <source src="/sounds/MCOG-3/3.T.mp3">
+           <source src="/sounds/COG-3/3.T.mp3">
         </audio> 
         <i id="click1" class="fa fa-arrow-right" style="display: none;"></i>
         <div id="beginbox" style="width: 37%;margin-left: 50%; margin-top: 5vw; height: 100vw; position: absolute; float: right; vertical-align: middle; text-align: center;">
@@ -27,7 +27,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;" required>
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('3.T'); show('intro'); setTimeout(showStoryVideo, 25);">Press to Begin</button>
+           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('3.T'); show('intro'); setTimeout(showStoryVideo, 25); hide('beginBox');">Press to Begin</button>
         </div>
         <div id="intro" style="width: 35vw; display: none;" class="speech sb1">
          Today you will read "The Honeyguide's Revenge" for the third time. Afterwards we will ask you to retell the story. 
@@ -35,7 +35,7 @@
         
         </div>
             <video id="storyVid" width="900" style="display:none; position: fixed; margin-top: 3vw; margin-left: 19.5vw; background-color:white">
-                 <source src="storycideo.mp4" type="video/mp4">
+                 <source src="storyvideo.mp4" type="video/mp4">
                  Your browser does not support the video tag.
             </video>
        
