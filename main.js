@@ -287,12 +287,12 @@ function showVideo(){
 }
 
 function showStoryVideo(){
-  show('storyVideo');
+  show('storyVid');
   waitShowNext(23000); 
   hide('beginbox'); 
   hide('intro'); 
   hide('coverPic'); 
   hide('avatar');
-  var myVid = document.getElementById('storyVideo');
+  var myVid = document.getElementById('storyVid');
   myVid.play();
 }
