@@ -285,3 +285,14 @@ function showVideo(){
   var myVid = document.getElementById('smokeVid');
   myVid.play();
 }
+
+function showStoryVideo(){
+  show('storyVideo');
+  waitShowNext(23000); 
+  hide('beginbox'); 
+  hide('intro'); 
+  hide('coverPic'); 
+  hide('avatar');
+  var myVid = document.getElementById('storyVideo');
+  myVid.play();
+}
