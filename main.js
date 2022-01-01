@@ -293,6 +293,5 @@ function showStoryVideo(){
   hide('intro'); 
   hide('coverPic'); 
   hide('avatar');
-  var myVid = document.getElementById('storyVid');
-  myVid.play();
+ 
 }
