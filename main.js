@@ -275,13 +275,13 @@ function waitInput(id, time){
   document.getElementById(id).disabled = true;
   setTimeout(enableInput, time, id);
 }
-function showVideo(){
-  show('smokeVid');
+function showVideo(id){
+  show(id);
   waitShowNext(23000); 
   hide('beginbox'); 
   hide('intro'); 
   hide('coverPic'); 
   hide('avatar');
-  var myVid = document.getElementById('smokeVid');
+  var myVid = document.getElementById('id');
   myVid.play();
 }
