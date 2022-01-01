@@ -247,6 +247,9 @@ function highlightGingile(){
 function waitShowNext(time){
   setTimeout(showNext, time);
 }
+function waitShowNext2(time){
+  setTimeout(showNext2, time);
+}
 function waitShow(item, time){
   setTimeout(show, time, item);
 }
@@ -288,7 +291,7 @@ function showVideo(){
 
 function showStoryVideo(){
   show('storyVid');
-  waitShowNext(23000); 
+  waitShowNext2(23000); 
   hide('beginbox'); 
   hide('intro'); 
   hide('coverPic'); 
