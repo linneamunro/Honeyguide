@@ -291,7 +291,7 @@ function showVideo(){
 
 function showStoryVideo(){
   show('storyVid');
-  waitShowNext2(55000); 
+  waitShowNext2(59000); 
   hide('beginbox'); 
   hide('intro'); 
   hide('coverPic'); 
