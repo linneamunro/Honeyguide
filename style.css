@@ -244,7 +244,7 @@
   content: '›';
   font-weight: bold;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   width: 2vw; 
   height: 2vw;
   text-align:center;
