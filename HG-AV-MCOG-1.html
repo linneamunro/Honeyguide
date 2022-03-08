@@ -32,8 +32,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('introsound'); show('intro'); hide('name'); showNext(); ">Press to Begin</button>
-        </div>
+           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('introsound'); show('intro'); hide('name'); setTimeout(showAfVideo, 45000);"
         <div id="intro" style="width: 35vw; display: none;" class="speech sb1">
          You will read the story "The Honeyguide's Revenge."  This story is a folktale told by the Zulu people in Africa.  
             A folktale is a traditional story that is passed down from one generation to another by word of mouth.  
@@ -41,6 +40,10 @@
             After you have read the story you can think about what you have learned about living in Africa. 
 
         </div>
+         <video id="africaVid" width="900" style="display: none; position: fixed; margin-top: 3vw; margin-left: 20vw;" controls>
+                 <source src="SouthAfricaVid.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+         </video>
 
       </div>
     </div>
