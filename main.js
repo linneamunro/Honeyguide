@@ -298,3 +298,14 @@ function showStoryVideo(){
   hide('avatar');
  
 }
+
+function showAfVideo(){
+  show('africaVid');
+  waitShowNext(150000); 
+  hide('beginbox'); 
+  hide('intro'); 
+  hide('coverPic'); 
+  hide('avatar');
+  var myVid = document.getElementById('africaVid');
+  myVid.play();
+}
