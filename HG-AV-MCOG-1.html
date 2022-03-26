@@ -32,7 +32,7 @@
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;" required>
            <br>
            <br>
-           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('1.T'); show('intro'); setTimeout(showAfVideo, 4000);">Press to Begin</button>
+           <button style="width: 40%; height: 3vw; font-size: 120%; cursor: pointer;"  onclick="play('1.T'); show('intro'); setTimeout(showAfVideo, 40000);">Press to Begin</button>
         </div>
         <div id="intro" style="width: 35vw; display: none;" class="speech sb1">
           You will read the story "The Honeyguide's Revenge." This story is a folktale told by the Zulu people in Africa. 
@@ -61,8 +61,9 @@
         <audio id="1.1B">
           <source src="/sounds/MCOG-1/1.1B.mp3">
         </audio>
-        <div id="showQ1" class="toggleButton" style="display: block;" onclick="show('firstq1'); play('1.1A');">Show Question</div>
+     
         <div class="words">Today you will read the story of The Honey Guide. This is the story of Ngede, the Honeyguide, and a greedy young man named Gingile.
+        <span id="showQ1" class="success-checkmark" style="display: inline-block;" onclick="show('firstq1'); hide('showQ1'); play('1.1A');"></span>
         </div>
         <div id="firstq1" style="display: none; width: 18vw;" class="speech sb1">Look at the picture. Who is Ngede? Click him on the picture</div>
         <div id="firstq2" style="display: none;" class="speech sb1">Look at the picture. Who is Gingile? Click him on the picture</div>
