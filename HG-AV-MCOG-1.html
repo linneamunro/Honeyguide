@@ -88,9 +88,9 @@
         <audio id="1.1s">
           <source src="/sounds/MCOG-1/1.1s.mp3">
         </audio>
-        <div id="showQ2" class="toggleButton" style="display: block;" onclick="show('rattled'); play('1.1');">Show Definition</div>
+   
         <div id="secondq1" style="display: none;" class="speech sb1">Click the highlighted text</div>
-        <div id="rattled" class="dictionary" style="margin-top: 5vw; margin-left: 62vw; display: none;">
+        <div id="rattled" class="dictionary" style="margin-top: 1vw; margin-left: 40vw; display: none;">
           <b style="background-color: lightgray;">Rattled (verb, past tense).</b> <br>1. Made a rapid sequence of short sharp noises. <br>2. Chattered on-and-on.
           <span id="secondCheck2" class="success-checkmark2" onclick="showNext(); hide('rattled');"></span>
         </div>
@@ -112,7 +112,7 @@
         <audio id="1.2">
           <source src="/sounds/MCOG-1/1.2.mp3">
         </audio>
-        <div id="thirdq1" class="multiple arrow" style="display: none;">
+        <div id="thirdq1" class="multiple" style="display: none; ,margin-right: 20vw;">
           Which one of these fruits is a fig? Click the correct fruit. <br><br>
           <img class="multImg" onclick="failure()" src="images/Orange.PNG">
           <img class="multImg" onclick="success(); showNext(); hide('thirdq1'); stop('1.2')" src="images/Fig.PNG">
@@ -134,7 +134,7 @@
         <audio id="1.3">
           <source src="/sounds/MCOG-1/1.3.mp3">
         </audio>
-        <div id="fourth" style="display: none; width: 20vw;" class="speech sb1">I wonder why Gingele needs a smoking stick?
+        <div id="fourth" style="display: none; width: 20vw; margin-top: 2vw;" class="speech sb1">I wonder why Gingele needs a smoking stick?
           <span id="fourthCheck2" class="success-checkmark2" onclick=" showNext();  hide('fourth'); stop('1.3')"></span>
         </div>
         <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick
@@ -153,11 +153,10 @@
         <audio id="1.4">
           <source src="/sounds/MCOG-1/1.4.mp3">
         </audio>
-        <div id="hive" class="dictionary" style="margin-top: 4vw; margin-left: 30vw; display: none;">
+        <div id="hive" class="dictionary" style="margin-top: 2vw; margin-left: 40vw; display: none;">
           <b style="background-color: lightgray;">Hive (noun).</b> <br>A shelter for a colony of bees.
           <span id="fifthCheck2" class="success-checkmark2" onclick="showNext();  hide('hive'); stop('1.4')"></span>
-          <div class="bubble1"></div>
-          <div class="bubble2"></div>
+        
         </div>
         <div class="words">Soon he could hear the loud buzzing of the busy bees. They were coming in and out of a hollow in the tree trunk – their <span id="hive_word">hive</span>. When Gingile reached the hive
            he pushed the smoking end of the stick into the hollow. The bees came rushing out, angry and mean. They flew away because they didn’t like the smoke – but not before they had
@@ -176,7 +175,7 @@
         <audio id="1.5">
           <source src="/sounds/MCOG-1/1.5.mp3"> 
         </audio>
-        <div id="comb" class="multiple arrow" style="margin-left: 16vw; height: 8vw; margin-top: 18vw; display: none;">
+        <div id="comb" class="multiple" style="margin-left: 12vw; height: 8vw; margin-top: 10vw; display: none;">
           Gingile wanted the bee's honey so he took their <input id="input1" style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
           background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer" >
           <span id="sixthCheck2" class="success-checkmark2" onclick="checkWord()"></span>
@@ -215,12 +214,12 @@
         <audio id="1.7">
           <source src="/sounds/MCOG-1/1.7.mp3">
         </audio>
-        <div id="furious" class="multiple arrow2" style="margin-left: 7vw; margin-top: 3vw; height: 23vw; display: none; text-align: start;">
+        <div id="furious" class="multiple" style="margin-left: 7vw; margin-top: 3vw; height: 23vw; display: none; text-align: start;">
           Ngede is furious. Which of these words is a synonym for furious? Click all the words that mean the same thing as furious:<br>
-          <br><span class="choice" onclick="success(); count(); checkCount(3, 'furious')">(a) angry</span>
-          <br><span class="choice" onclick="success(); count(); checkCount(3, 'furious')">(b) enraged</span>
+           <br><span id="choice1" class="choice" onclick="success(); count(); checkCount(3, 'furious'); highlight('choice1')">(a) angry</span>
+          <br><span id="choice2" class="choice" onclick="success(); count(); checkCount(3, 'furious'); highlight('choice2')">(b) enraged</span>
           <br><span class="choice" onclick="failure()">(c) tranquil</span>
-          <br><span class="choice" onclick="success(); count(); checkCount(3, 'furious')">(d) mad</span>
+          <br><span id="choice3" class="choice" onclick="success(); count(); checkCount(3, 'furious'); highlight('choice3')">(d) mad</span>
           <br><span class="choice" onclick="failure()">(e) serene</span>
         </div>
         <div class="words">But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird. Ngede called out angrily, “VIC-torr! VIC-torrr!” Gingile 
