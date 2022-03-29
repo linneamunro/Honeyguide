@@ -104,7 +104,7 @@ function clickNgede(){
     document.getElementById("firstq2").style.display = "block";
     document.getElementById("firstq1").style.display = "none";
     document.getElementById("firstAvatar").onclick = function(){ toggle("firstq2") };
-    waitShow('Gingile', 10000)
+    
   }
   else{
     failure.play();
