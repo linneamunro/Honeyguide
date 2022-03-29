@@ -306,6 +306,7 @@ function showAfVideo(){
   hide('intro'); 
   hide('coverPic'); 
   hide('avatar');
+  hide('name');
   var myVid = document.getElementById('africaVid');
   myVid.play();
 }
