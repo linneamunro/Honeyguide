@@ -30,7 +30,7 @@
         </audio> 
         <i id="click" class="fa fa-arrow-left" style="display: none; margin-left: 49vw;">&nbsp;Click Here</i>
         <div style="width: 37%;margin-left: 50%; margin-top: 5vw; height: 20vw; position: absolute; float: right; vertical-align: middle; text-align: center;">
-          <input placeholder="Enter Name" id="name" style="vertical-align: middle; border-top: hidden; 
+          <input id="name" placeholder="Enter Name" id="name" style="vertical-align: middle; border-top: hidden; 
           border-left: hidden; border-right: hidden; text-align: center; position: relative;
            height: 5vh; width: 60%; margin-top: 20vh; font-size: 200%; outline: none;">
            <br>
@@ -63,7 +63,7 @@
         </audio>
    
         <div class="words">Today you will read the story of The Honey Guide. This is the story of Ngede, the Honeyguide, and a greedy young man named Gingile.
-        <span id="showQ1" class="success-checkmark" style="display: inline-block;" onclick="show('firstq1'); hide('showQ1');"></span>
+        <span id="showQ1" class="success-checkmark" style="display: inline-block;" onclick="play('1.1A'); show('firstq1'); waitShow('ngede', 10000); hide('showQ1');"></span>
         </div>
 
         <div id="firstq1" style="display: none; width: 18vw; margin-top:-2vw" class="speechQ sb2">Look at the picture. Who is Ngede? Click him on the picture</div>
