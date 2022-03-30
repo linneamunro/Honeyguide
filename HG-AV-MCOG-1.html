@@ -90,12 +90,12 @@
        
         <div id="rattled" class="dictionary" style="margin-top: -3vw; width: 35vw;">  
           <b style="background-color: lightgray;">Rattled (verb, past tense)</b> <br>1. Made a rapid sequence of short sharp noises. <br>2.Chattered on-and-on. &nbsp;
-        <span id="check3" class="success-checkmark2" onclick="waitShowNext(20000); play('1.1'); hide('rattled'); unhighlight('rattled_word')"></span>
+        <span id="check3" class="success-checkmark2" onclick="hide('rattled'); unhighlight('rattled_word'); showNext();"></span>
         </div>
         <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, 
           searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird <span id="rattled_word" style="background-color: yellow"> rattled</span>, as he flew to the next tree, and the next. 
           “Chitik, chitik, chitik,” he called, stopping from time to time to be sure that Gingile followed.
-          <span id="showQ2" class="success-checkmark" style="display: inline-block;" onclick="show('rattled'); hide('showQ2');"></span>
+          <span id="showQ2" class="success-checkmark" style="display: inline-block;" onclick="play('1.1'); waitShow('check3', 10000); show('rattled'); hide('showQ2');"></span>
         </div>
       </div>
     </div>
@@ -114,13 +114,13 @@
       
         <div id="Q3" class="multiple" style="display: none; margin-right: 500px; margin-top: 350px;">
           Which one of these fruits is a fig? Click the correct fruit. <br><br>
-          <img class="multImg" onclick="failure()" src="images/Orange.PNG">
-          <img class="multImg" onclick="success(); showNext(); hide('Q3');" src="images/Fig.PNG">
-          <img class="multImg" onclick="failure()" src="images/Kiwi.PNG">
+          <img id="orange" class="multImg" onclick="failure()" src="images/Orange.PNG">
+          <img id="fig" class="multImg" onclick="success(); showNext(); hide('Q3');" src="images/Fig.PNG">
+          <img id="kiwi" class="multImg" onclick="failure()" src="images/Kiwi.PNG">
         </div>
         <div class="words">After half an hour, they reached a huge wild <span id="fig_word">fig</span> tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at 
           Gingile as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he trusted Ngede.
-          <span id="showQ3" class="success-checkmark" style="display: inline-block;" onclick="play('1.2'); show('Q3'); hide('showQ3');"></span>
+          <span id="showQ3" class="success-checkmark" style="display: inline-block;" onclick="play('1.2'); waitEnable('fig', 5000); waitEnable('orange', 5000); waitEnable('kiwi', 5000); show('Q3'); hide('showQ3');"></span>
         </div>
       </div>
     </div>
