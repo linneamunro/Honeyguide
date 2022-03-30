@@ -202,7 +202,6 @@ function count(){
 function checkCount(num, id){
   if(check2 == num){
     document.getElementById(id).style.display = "none";
-    stop('1.7');
     showNext();
   }
 }
@@ -264,6 +263,9 @@ function pauseVid(video){
 }
 function enableClick(id){
   document.getElementById(id).style.pointerEvents = 'auto';
+}
+function disableClick(id){
+  document.getElementById(id).style.pointerEvents = 'none';
 }
 
 function waitEnable(id, time){
