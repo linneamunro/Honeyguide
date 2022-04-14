@@ -1,7 +1,7 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 var check = 0;
-var check2 =0;
+var check2 = 0;
 
 // Next/previous controls
 function plusSlides(n) {
