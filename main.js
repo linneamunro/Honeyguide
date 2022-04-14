@@ -196,17 +196,19 @@ function checkWord3(){
 }
 
 function count(){
-  check2 += 1;
+  check += 1;
 }
 
 function checkCount(num, id){
-  if(check2 == num){
+  if(check == num){
     document.getElementById(id).style.display = "none";
     showNext();
   }
 }
 
-
+function count2(){
+  check2 += 1;
+}
 function checkCount2(num, id){
   if(check2 == num){
     document.getElementById(id).style.display = "none";
