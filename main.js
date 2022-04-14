@@ -308,7 +308,7 @@ function showStoryVideo(){
 
 function showAfVideo(){
   show('africaVid');
-  waitShowNext(1000); 
+  waitShowNext(150000); 
   hide('beginbox'); 
   hide('intro'); 
   hide('coverPic'); 
