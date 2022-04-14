@@ -9,6 +9,7 @@ function plusSlides(n) {
   document.getElementById("n").style.display = "none";
   document.getElementById("c").style.display = "block";
   check = 0;
+  check2 = 0;
 }
 
 // Next/previous for not metacognitive
@@ -23,6 +24,7 @@ function plusSlides2(n) {
     document.getElementById("n2").style.display = "block";
   }
   check = 0;
+  check2 = 0;
 }
 
 // Thumbnail image controls
